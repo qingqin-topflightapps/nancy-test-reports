@@ -1,4 +1,0 @@
-Notification text to mark as unread: 'Community comment ogn1Eo'
-Mark as unread button is visible, clicking...
-Found notification 'Community comment ogn1Eo' in Unread tab
-Notification marked as unread successfully.

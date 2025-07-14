@@ -1,0 +1,7 @@
+No unread notifications found, switching to Read tab.
+Searching for Step Comment on page 1
+No Step Comment found on page 1
+Clicked next page button, moving to page 2
+Searching for Step Comment on page 2
+Found Step Comment notification on page 2
+Clicked 'View all the comments.' button.

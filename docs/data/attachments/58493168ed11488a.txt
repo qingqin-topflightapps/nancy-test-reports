@@ -1,0 +1,25 @@
+2025-07-14 21:56:02 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_3_4_0_modify_name
+2025-07-14 21:56:02 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-14 21:56:02 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:29 - Setting up test environment with app restart
+2025-07-14 21:56:02 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 21:56:02 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:37 - App restarted successfully
+2025-07-14 21:56:05 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:48 - Test environment setup completed
+2025-07-14 21:56:12 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-14 21:56:12 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-14 21:56:12 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:test_NAF_3_4_0_modify_name:211 - Enter user profile
+2025-07-14 21:56:15 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-14 21:56:15 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-14 21:56:15 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-14 21:56:19 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc="Personal Info"]
+2025-07-14 21:56:19 | INFO     | pages.personal_infomation_page:click_personal_info:267 - Click the personal_info
+2025-07-14 21:56:21 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text="Name"]/following-sibling::android.view.ViewGroup
+2025-07-14 21:56:21 | INFO     | pages.personal_infomation_page:change_name:278 - Enter the first name Qpwvo
+2025-07-14 21:56:24 | INFO     | core.base_page:send_keys_to_element:107 - Sent keys to element: xpath=//android.widget.EditText[1], Text: Qpwvo
+2025-07-14 21:56:27 | INFO     | pages.personal_infomation_page:change_name:284 - Enter the first name Fpwvo
+2025-07-14 21:56:29 | INFO     | core.base_page:send_keys_to_element:107 - Sent keys to element: xpath=//android.widget.EditText[2], Text: Fpwvo
+2025-07-14 21:56:34 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc="Save Changes"]
+2025-07-14 21:56:34 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_NAF_3_4_0_modify_name
+2025-07-14 21:56:34 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:53 - Test completed, taking screenshot
+2025-07-14 21:56:35 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 21:56:35 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:63 - App restarted after test completion
+2025-07-14 21:56:35 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function
