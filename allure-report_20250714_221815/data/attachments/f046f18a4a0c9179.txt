@@ -1,0 +1,3 @@
+Clicked the first 'Mark as read' button on the page.
+First notification is marked as unread.
+Found 10 rows in the notifications table.

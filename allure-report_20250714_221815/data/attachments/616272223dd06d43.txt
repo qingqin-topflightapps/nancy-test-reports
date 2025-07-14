@@ -1,0 +1,2 @@
+2025-07-14 22:37:30.466 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_4_2_0_valid_program_selection_and_start
+2025-07-14 22:37:30.466 | INFO     | natal_mobile_auto.conftest:setup_test_session:41 - Setting up test session
