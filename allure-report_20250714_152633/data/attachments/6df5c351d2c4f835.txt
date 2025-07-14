@@ -1,0 +1,17 @@
+2025-07-14 15:39:33 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_3_3_0_edit_profile_picture
+2025-07-14 15:39:33 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-14 15:39:33 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:29 - Setting up test environment with app restart
+2025-07-14 15:39:34 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 15:39:34 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:37 - App restarted successfully
+2025-07-14 15:39:37 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:48 - Test environment setup completed
+2025-07-14 15:39:44 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-14 15:39:44 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-14 15:39:44 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:test_NAF_3_3_0_edit_profile_picture:133 - Enter user profile
+2025-07-14 15:39:47 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-14 15:39:47 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-14 15:40:29 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:test_NAF_3_3_0_edit_profile_picture:184 - Profile image edit test passed
+2025-07-14 15:40:29 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_NAF_3_3_0_edit_profile_picture
+2025-07-14 15:40:29 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:53 - Test completed, taking screenshot
+2025-07-14 15:40:30 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 15:40:30 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:63 - App restarted after test completion
+2025-07-14 15:40:30 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function

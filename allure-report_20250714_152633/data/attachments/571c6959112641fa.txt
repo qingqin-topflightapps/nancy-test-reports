@@ -1,0 +1,30 @@
+2025-07-14 15:41:33 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_3_5_0_add_kids
+2025-07-14 15:41:33 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-14 15:41:33 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:29 - Setting up test environment with app restart
+2025-07-14 15:41:33 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 15:41:33 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:37 - App restarted successfully
+2025-07-14 15:41:36 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:48 - Test environment setup completed
+2025-07-14 15:41:43 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-14 15:41:43 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-14 15:41:43 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:test_NAF_3_5_0_add_kids:335 - Enter user profile
+2025-07-14 15:41:45 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-14 15:41:45 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-14 15:41:48 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc="Add kid"]
+2025-07-14 15:41:48 | INFO     | pages.personal_infomation_page:click_add_kids_btn:124 - Clicked the add kids button
+2025-07-14 15:41:48 | INFO     | pages.personal_infomation_page:send_kids_name:133 - Clear the old name success
+2025-07-14 15:41:51 | INFO     | core.base_page:send_keys_to_element:107 - Sent keys to element: xpath=//android.widget.EditText, Text: some kid
+2025-07-14 15:41:54 | INFO     | pages.personal_infomation_page:send_kids_name:135 - Entered name: some kid
+2025-07-14 15:41:56 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Age']/following-sibling::android.view.ViewGroup
+2025-07-14 15:41:59 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc="Done"]
+2025-07-14 15:41:59 | INFO     | pages.personal_infomation_page:enter_kids_age:144 - Enter the age done
+2025-07-14 15:42:01 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc="Optional"]
+2025-07-14 15:42:04 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc="Done"]
+2025-07-14 15:42:04 | INFO     | pages.personal_infomation_page:enter_kids_gender:153 - Enter the gender done
+2025-07-14 15:42:06 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc='Save Changes']
+2025-07-14 15:42:06 | INFO     | pages.personal_infomation_page:click_bio_save_btn:107 - Clicked the bio edit save button
+2025-07-14 15:42:06 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:test_NAF_3_5_0_add_kids:346 - Added kids profile
+2025-07-14 15:42:06 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_NAF_3_5_0_add_kids
+2025-07-14 15:42:06 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:53 - Test completed, taking screenshot
+2025-07-14 15:42:07 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 15:42:07 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:63 - App restarted after test completion
+2025-07-14 15:42:07 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function
