@@ -1,0 +1,25 @@
+2025-07-15 02:11:38 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_14_4_0_verify_liking_post
+2025-07-15 02:11:38 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-15 02:11:38 | INFO     | natal_mobile_auto.tests.test_14_Community:setup_and_teardown:18 - Setting up test environment with app restart
+2025-07-15 02:11:38 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-15 02:11:38 | INFO     | natal_mobile_auto.tests.test_14_Community:setup_and_teardown:26 - App restarted successfully
+2025-07-15 02:11:51 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='COMMUNITY'] | //android.view.ViewGroup[@content-desc='COMMUNITY']
+2025-07-15 02:11:53 | INFO     | natal_mobile_auto.tests.test_14_Community:setup_and_teardown:43 - Test environment setup completed
+2025-07-15 02:11:55 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc='NEW POST'] | //android.widget.TextView[contains(@text, 'NEW POST')] | //android.widget.Button[contains(@text, 'NEW POST')]
+2025-07-15 02:12:03 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Post']
+Error getting like count for post 'Test like post Cf0oE0ec': Message: An element could not be located on the page using the given search parameters.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/qingqinfang/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElementFromElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:88:12)
+2025-07-15 02:12:38 | INFO     | natal_mobile_auto.tests.test_14_Community:test_NAF_14_4_0_verify_liking_post:368 - Like functionality not found in current implementation
+2025-07-15 02:12:38 | INFO     | natal_mobile_auto.tests.test_14_Community:test_NAF_14_4_0_verify_liking_post:369 - This test verifies post creation and visibility
+2025-07-15 02:12:38 | INFO     | natal_mobile_auto.tests.test_14_Community:test_NAF_14_4_0_verify_liking_post:370 - Like functionality may need to be implemented in future versions
+2025-07-15 02:12:38 | INFO     | natal_mobile_auto.tests.test_14_Community:test_NAF_14_4_0_verify_liking_post:372 - Successfully created post for like testing: Test like post Cf0oE0ec
+2025-07-15 02:12:38 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_NAF_14_4_0_verify_liking_post
+2025-07-15 02:12:38 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-15 02:12:38 | INFO     | natal_mobile_auto.tests.test_14_Community:setup_and_teardown:50 - App restarted after test completion
+2025-07-15 02:12:38 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function
+2025-07-15 02:12:38 | INFO     | natal_mobile_auto.conftest:setup_test_session:54 - Test session teardown
