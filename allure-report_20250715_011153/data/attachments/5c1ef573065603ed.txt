@@ -1,0 +1,2 @@
+Clicked the first 'Mark as read' button on the page.
+Notification status updated to read/unread successfully.

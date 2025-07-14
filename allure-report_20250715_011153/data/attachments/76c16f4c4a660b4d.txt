@@ -1,0 +1,2 @@
+2025-07-15 01:32:45.981 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_14_1_0_verify_community_feed_navigation
+2025-07-15 01:32:45.982 | INFO     | natal_mobile_auto.conftest:setup_test_session:41 - Setting up test session
