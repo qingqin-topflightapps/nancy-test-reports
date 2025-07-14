@@ -2,9 +2,9 @@ name: Deploy Latest Allure Report
 
 on:
   push:
-    branches: [ main ]
-    paths: [ 'allure-report_*/**' ]
-  workflow_dispatch: 
+  #   branches: [ main ]
+  #   paths: [ 'allure-report_*/**' ]
+  # workflow_dispatch: 
 
 jobs:
   deploy:
