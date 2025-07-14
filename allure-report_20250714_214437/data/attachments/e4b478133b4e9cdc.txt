@@ -1,0 +1,5 @@
+No unread notifications found, switching to Read tab.
+Error: Locator.wait_for: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[placeholder='Add a comment...']") to be visible
+ - Could not reply to the comment.

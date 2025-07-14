@@ -1,0 +1,14 @@
+2025-07-14 22:03:22 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_14_2_0_verify_post_fields_after_sending
+2025-07-14 22:03:22 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-14 22:03:22 | INFO     | natal_mobile_auto.tests.test_14_Community:setup_and_teardown:18 - Setting up test environment with app restart
+2025-07-14 22:03:22 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 22:03:22 | INFO     | natal_mobile_auto.tests.test_14_Community:setup_and_teardown:26 - App restarted successfully
+2025-07-14 22:03:34 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='COMMUNITY'] | //android.view.ViewGroup[@content-desc='COMMUNITY']
+2025-07-14 22:03:36 | INFO     | natal_mobile_auto.tests.test_14_Community:setup_and_teardown:43 - Test environment setup completed
+2025-07-14 22:03:38 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc='NEW POST'] | //android.widget.TextView[contains(@text, 'NEW POST')] | //android.widget.Button[contains(@text, 'NEW POST')]
+2025-07-14 22:03:45 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Post']
+2025-07-14 22:03:48 | INFO     | natal_mobile_auto.tests.test_14_Community:test_NAF_14_2_0_verify_post_fields_after_sending:175 - Successfully verified post fields functionality
+2025-07-14 22:03:48 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_NAF_14_2_0_verify_post_fields_after_sending
+2025-07-14 22:03:48 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 22:03:48 | INFO     | natal_mobile_auto.tests.test_14_Community:setup_and_teardown:50 - App restarted after test completion
+2025-07-14 22:03:48 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function

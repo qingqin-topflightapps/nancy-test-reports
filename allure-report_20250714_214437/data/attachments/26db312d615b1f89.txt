@@ -1,0 +1,14 @@
+2025-07-14 21:52:23 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_2_2_0_login_with_wrong_password
+2025-07-14 21:52:23 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-14 21:52:23 | INFO     | natal_mobile_auto.tests.test_2_Authentication:setup_and_teardown:22 - Setting up test environment with app restart
+2025-07-14 21:52:23 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 21:52:23 | INFO     | natal_mobile_auto.tests.test_2_Authentication:setup_and_teardown:30 - App restarted successfully
+2025-07-14 21:52:26 | INFO     | natal_mobile_auto.tests.test_2_Authentication:setup_and_teardown:41 - Test environment setup completed
+2025-07-14 21:52:26 | INFO     | natal_mobile_auto.tests.test_2_Authentication:test_NAF_2_2_0_login_with_wrong_password:179 - Starting original login with custom data test
+2025-07-14 21:52:39 | INFO     | natal_mobile_auto.tests.test_2_Authentication:test_NAF_2_2_0_login_with_wrong_password:249 - Custom login test completed (may fail with invalid credentials)
+2025-07-14 21:52:39 | INFO     | natal_mobile_auto.tests.test_2_Authentication:test_NAF_2_2_0_login_with_wrong_password:255 - Original login with custom data test completed
+2025-07-14 21:52:39 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_NAF_2_2_0_login_with_wrong_password
+2025-07-14 21:52:39 | INFO     | natal_mobile_auto.tests.test_2_Authentication:setup_and_teardown:46 - Test completed, taking screenshot
+2025-07-14 21:52:39 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 21:52:39 | INFO     | natal_mobile_auto.tests.test_2_Authentication:setup_and_teardown:56 - App restarted after test completion
+2025-07-14 21:52:39 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function
