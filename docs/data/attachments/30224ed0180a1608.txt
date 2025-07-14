@@ -1,0 +1,30 @@
+2025-07-14 22:36:47 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_3_7_0_change_stage
+2025-07-14 22:36:47 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-14 22:36:47 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:29 - Setting up test environment with app restart
+2025-07-14 22:36:47 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 22:36:47 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:37 - App restarted successfully
+2025-07-14 22:36:50 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:48 - Test environment setup completed
+2025-07-14 22:36:58 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-14 22:36:58 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-14 22:36:58 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:test_NAF_3_7_0_change_stage:422 - Enter user profile
+2025-07-14 22:37:00 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-14 22:37:00 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-14 22:37:03 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc="Edit"]
+2025-07-14 22:37:03 | INFO     | pages.personal_infomation_page:click_stage_edit:173 - Click the current stage edit button
+2025-07-14 22:37:03 | INFO     | pages.personal_infomation_page:click_stage_to_change:183 - Random Choice is Trying to Conceive, to change
+2025-07-14 22:37:06 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc="Trying to Conceive"]
+2025-07-14 22:37:08 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text="I understand"]
+2025-07-14 22:37:12 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc="0-3 months"]
+2025-07-14 22:37:15 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text="Continue"]
+2025-07-14 22:37:15 | INFO     | pages.personal_infomation_page:click_stage_to_change:235 - Changed stage
+2025-07-14 22:37:23 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-14 22:37:23 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-14 22:37:26 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-14 22:37:26 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-14 22:37:26 | INFO     | pages.personal_infomation_page:get_current_stage:249 - Get the current stage
+2025-07-14 22:37:26 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_NAF_3_7_0_change_stage
+2025-07-14 22:37:26 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:53 - Test completed, taking screenshot
+2025-07-14 22:37:27 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 22:37:27 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:63 - App restarted after test completion
+2025-07-14 22:37:27 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function
+2025-07-14 22:37:27 | INFO     | natal_mobile_auto.conftest:setup_test_session:54 - Test session teardown

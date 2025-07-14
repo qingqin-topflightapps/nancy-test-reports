@@ -1,0 +1,2 @@
+2025-07-14 22:45:50.523 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_logout_and_relogin
+2025-07-14 22:45:50.524 | INFO     | natal_mobile_auto.conftest:setup_test_session:41 - Setting up test session
