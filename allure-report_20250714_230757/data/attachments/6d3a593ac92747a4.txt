@@ -1,0 +1,4 @@
+Delete post failed: Locator.scroll_into_view_if_needed: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("article").filter(has_text="Updated post content").first.locator("xpath=ancestor::div[contains(@class, 'css-55jug0')]").locator("button[aria-label='Options']").first
+

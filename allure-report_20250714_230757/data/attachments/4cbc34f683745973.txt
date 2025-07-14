@@ -1,0 +1,31 @@
+2025-07-14 23:37:11 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_logout_returns_to_welcome_page
+2025-07-14 23:37:11 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-14 23:37:11 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:setup_and_teardown:25 - Setting up logout test environment with app restart
+2025-07-14 23:37:11 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 23:37:11 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:setup_and_teardown:33 - App restarted successfully
+2025-07-14 23:37:14 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:setup_and_teardown:44 - Test environment setup completed
+2025-07-14 23:37:14 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:test_logout_returns_to_welcome_page:153 - Step 1: Performing logout
+2025-07-14 23:37:14 | INFO     | pages.personal_infomation_page:logout:385 - Starting logout process with stability improvements
+2025-07-14 23:37:22 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-14 23:37:22 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-14 23:37:26 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-14 23:37:26 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-14 23:37:28 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-14 23:37:29 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-14 23:37:31 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-14 23:37:33 | INFO     | pages.personal_infomation_page:scroll_to_bottom:364 - Scrolled to bottom of page
+2025-07-14 23:37:36 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-14 23:37:38 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-14 23:37:40 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-14 23:37:42 | INFO     | pages.personal_infomation_page:scroll_to_bottom:364 - Scrolled to bottom of page
+2025-07-14 23:37:44 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text="Log out"]
+2025-07-14 23:37:44 | INFO     | pages.personal_infomation_page:click_logout_button:377 - Clicked Log out button - logout completed
+2025-07-14 23:37:49 | INFO     | pages.personal_infomation_page:logout:403 - Logout completed successfully
+2025-07-14 23:37:49 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:test_logout_returns_to_welcome_page:157 - Step 2: Verifying logout returns to welcome page
+2025-07-14 23:37:49 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:test_logout_returns_to_welcome_page:168 - Logout test passed successfully
+2025-07-14 23:37:49 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_logout_returns_to_welcome_page
+2025-07-14 23:37:49 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:setup_and_teardown:49 - Logout test completed, taking screenshot
+2025-07-14 23:37:49 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 23:37:49 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:setup_and_teardown:59 - App restarted after test completion
+2025-07-14 23:37:49 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function
+2025-07-14 23:37:49 | INFO     | natal_mobile_auto.conftest:setup_test_session:54 - Test session teardown

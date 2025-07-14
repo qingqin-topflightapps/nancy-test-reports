@@ -1,0 +1,4 @@
+Notification text to mark as unread: 'Test like post exuo83sT'
+Mark as unread button is visible, clicking...
+Found notification 'Test like post exuo83sT' in Unread tab
+Notification marked as unread successfully.
