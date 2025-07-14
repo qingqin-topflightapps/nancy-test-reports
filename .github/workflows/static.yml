@@ -1,44 +1,32 @@
-name: Deploy Allure Report to GitHub Pages
+name: Deploy Latest Allure Report
 
 on:
   push:
-    branches: ["main"]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    branches: [ main ]
+    paths: [ 'allure-report_*/**' ]
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        
-      - name: Move Allure report to docs directory
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Find latest report
+        id: find-report
         run: |
-          mkdir -p docs
-          cp -r allure-report_20250714_152633/* docs/
-          mv docs/index_html docs/index.html
-          
+          latest=$(ls -td allure-report_* | head -1)
+          echo "latest_report=$latest" >> $GITHUB_OUTPUT
+          echo "Found latest report: $latest"
+
       - name: Setup Pages
-        uses: actions/configure-pages@v5
-        
+        uses: actions/configure-pages@v4
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # 只上传 docs 目录
-          path: 'docs/'
-          
-      - name: Deploy to GitHub Pages
-        id: deployment
+          path: "${{ steps.find-report.outputs.latest_report }}"
+
+      - name: Deploy
         uses: actions/deploy-pages@v4
