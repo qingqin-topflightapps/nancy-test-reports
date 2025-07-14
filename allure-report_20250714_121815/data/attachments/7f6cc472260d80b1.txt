@@ -1,0 +1,2 @@
+2025-07-14 12:38:08.594 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_join_program
+2025-07-14 12:38:08.595 | INFO     | natal_mobile_auto.conftest:setup_test_session:41 - Setting up test session
