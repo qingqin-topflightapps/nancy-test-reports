@@ -1,0 +1,29 @@
+2025-07-15 01:59:15 | INFO     | natal_mobile_auto.conftest:setup_test_session:50 - Test session setup completed
+2025-07-15 01:59:15 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-15 01:59:15 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:29 - Setting up test environment with app restart
+2025-07-15 01:59:15 | INFO     | core.driver_manager:_create_driver:43 - {'platformName': 'Android', 'platformVersion': '14.0', 'deviceName': '127.0.0.1:6555', 'appPackage': 'com.natalllc.dev', 'appActivity': 'com.natalllc.dev.MainActivity', 'automationName': 'UiAutomator2', 'noReset': True, 'newCommandTimeout': 300, 'waitForIdleTimeout': 3000, 'uiautomator2ServerInstallTimeout': 60000, 'uiautomator2ServerLaunchTimeout': 60000, 'androidInstallTimeout': 90000, 'adbExecTimeout': 20000, 'autoGrantPermissions': True, 'skipServerInstallation': False, 'ignoreHiddenApiPolicyError': True}
+2025-07-15 01:59:15 | INFO     | core.driver_manager:_create_driver:59 - Connecting to Appium server: http://127.0.0.1:4723
+2025-07-15 01:59:18 | INFO     | core.driver_manager:_create_driver:65 - WebDriver created successfully
+2025-07-15 01:59:19 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-15 01:59:19 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:37 - App restarted successfully
+2025-07-15 01:59:22 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:48 - Test environment setup completed
+2025-07-15 01:59:31 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-15 01:59:31 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-15 01:59:31 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:test_NAF_3_2_0_update_bio:93 - Enter user profile
+2025-07-15 01:59:35 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-15 01:59:35 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-15 01:59:39 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Bio']/following-sibling::android.view.ViewGroup
+2025-07-15 01:59:39 | INFO     | pages.personal_infomation_page:click_bio_edit:86 - Clicked the bio edit
+2025-07-15 01:59:40 | INFO     | pages.personal_infomation_page:send_bio_content:96 - Clear the old content success
+2025-07-15 01:59:44 | INFO     | core.base_page:send_keys_to_element:107 - Sent keys to element: xpath=//android.widget.EditText, Text: W3m0eFf7aM5HBwy1
+2025-07-15 01:59:46 | INFO     | pages.personal_infomation_page:send_bio_content:98 - Entered content: W3m0eFf7aM5HBwy1
+2025-07-15 01:59:46 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:test_NAF_3_2_0_update_bio:103 - Enter the bio content: W3m0eFf7aM5HBwy1
+2025-07-15 01:59:48 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc='Save Changes']
+2025-07-15 01:59:48 | INFO     | pages.personal_infomation_page:click_bio_save_btn:107 - Clicked the bio edit save button
+2025-07-15 01:59:51 | INFO     | pages.personal_infomation_page:if_has_content:115 - W3m0eFf7aM5HBwy1 saved successfully
+2025-07-15 01:59:51 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:test_NAF_3_2_0_update_bio:109 - test has passed
+2025-07-15 01:59:51 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_NAF_3_2_0_update_bio
+2025-07-15 01:59:51 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:53 - Test completed, taking screenshot
+2025-07-15 01:59:51 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-15 01:59:51 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:63 - App restarted after test completion
+2025-07-15 01:59:51 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function
