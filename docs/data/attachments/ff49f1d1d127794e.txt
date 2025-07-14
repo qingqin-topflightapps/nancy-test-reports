@@ -1,0 +1,49 @@
+2025-07-14 23:18:20 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_logout_and_relogin
+2025-07-14 23:18:20 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-14 23:18:20 | INFO     | natal_mobile_auto.tests.test_2_Authentication:setup_and_teardown:376 - Setting up logout test environment with app restart
+2025-07-14 23:18:21 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 23:18:21 | INFO     | natal_mobile_auto.tests.test_2_Authentication:setup_and_teardown:384 - App restarted successfully
+2025-07-14 23:18:24 | INFO     | natal_mobile_auto.tests.test_2_Authentication:setup_and_teardown:395 - Test environment setup completed
+2025-07-14 23:18:24 | INFO     | pages.personal_infomation_page:logout:385 - Starting logout process with stability improvements
+2025-07-14 23:18:31 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-14 23:18:31 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-14 23:18:35 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-14 23:18:35 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-14 23:18:37 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-14 23:18:39 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-14 23:18:40 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-14 23:18:42 | INFO     | pages.personal_infomation_page:scroll_to_bottom:364 - Scrolled to bottom of page
+2025-07-14 23:18:45 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-14 23:18:47 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-14 23:18:49 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-14 23:18:51 | INFO     | pages.personal_infomation_page:scroll_to_bottom:364 - Scrolled to bottom of page
+2025-07-14 23:18:54 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text="Log out"]
+2025-07-14 23:18:54 | INFO     | pages.personal_infomation_page:click_logout_button:377 - Clicked Log out button - logout completed
+2025-07-14 23:18:58 | INFO     | pages.personal_infomation_page:logout:403 - Logout completed successfully
+2025-07-14 23:19:02 | INFO     | pages.personal_infomation_page:is_logged_out:424 - Successfully logged out - back to welcome page
+2025-07-14 23:19:03 | INFO     | pages.login_page:login:99 - Starting login process with stability improvements
+2025-07-14 23:19:03 | INFO     | pages.login_page:wait_for_welcome_screen:26 - Welcome screen loaded successfully
+2025-07-14 23:19:07 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Log in']/..
+2025-07-14 23:19:07 | INFO     | pages.login_page:click_login_button:35 - Clicked login button on welcome screen
+2025-07-14 23:19:11 | INFO     | pages.login_page:wait_for_login_screen:44 - Login screen loaded successfully
+2025-07-14 23:19:15 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Sign in with your email']/..
+2025-07-14 23:19:15 | INFO     | pages.login_page:click_email_login_button:53 - Clicked email login button
+2025-07-14 23:19:18 | INFO     | pages.login_page:wait_for_email_login_screen:62 - Email login screen loaded successfully
+2025-07-14 23:19:22 | INFO     | core.base_page:send_keys_to_element:107 - Sent keys to element: xpath=//android.widget.EditText[1], Text: qingqin@topflightapps.com
+2025-07-14 23:19:24 | INFO     | pages.login_page:enter_email:72 - Entered email: qingqin@topflightapps.com
+2025-07-14 23:19:27 | INFO     | core.base_page:send_keys_to_element:107 - Sent keys to element: xpath=//android.widget.EditText[2], Text: Aa11111.
+2025-07-14 23:19:29 | INFO     | pages.login_page:enter_password:82 - Entered password
+2025-07-14 23:19:32 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Log in']/..
+2025-07-14 23:19:32 | INFO     | pages.login_page:click_final_login_button:91 - Clicked final login button
+2025-07-14 23:19:36 | INFO     | pages.login_page:login:128 - Login process completed successfully
+2025-07-14 23:19:40 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-14 23:19:40 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-14 23:19:44 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-14 23:19:44 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-14 23:19:44 | INFO     | natal_mobile_auto.tests.test_2_Authentication:test_logout_and_relogin:461 - Logout and relogin test passed successfully
+2025-07-14 23:19:44 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_logout_and_relogin
+2025-07-14 23:19:44 | INFO     | natal_mobile_auto.tests.test_2_Authentication:setup_and_teardown:400 - Logout test completed, taking screenshot
+2025-07-14 23:19:45 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 23:19:45 | INFO     | natal_mobile_auto.tests.test_2_Authentication:setup_and_teardown:410 - App restarted after test completion
+2025-07-14 23:19:45 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function
+2025-07-14 23:19:45 | INFO     | natal_mobile_auto.conftest:setup_test_session:54 - Test session teardown
