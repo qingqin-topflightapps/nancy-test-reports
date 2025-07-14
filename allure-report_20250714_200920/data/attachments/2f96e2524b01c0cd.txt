@@ -1,0 +1,8 @@
+No unread notifications found, switching to Read tab.
+Scrolled to the first row.
+Clicked on the 3-dots menu button.
+Clicked on the 'Delete' option.
+Confirmation modal is visible.
+Confirmed deletion.
+Success message found with selector: [data-status='success']:has-text('Comment deleted successfully')
+Deletion successful.
