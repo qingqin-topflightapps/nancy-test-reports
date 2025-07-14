@@ -1,0 +1,93 @@
+2025-07-15 01:22:35 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_3_4_0_modify_name
+2025-07-15 01:22:35 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-15 01:22:35 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:29 - Setting up test environment with app restart
+2025-07-15 01:22:35 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-15 01:22:35 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:37 - App restarted successfully
+2025-07-15 01:22:38 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:48 - Test environment setup completed
+2025-07-15 01:22:45 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-15 01:22:45 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-15 01:22:45 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:test_NAF_3_4_0_modify_name:211 - Enter user profile
+2025-07-15 01:22:47 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-15 01:22:47 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-15 01:22:47 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-15 01:23:20 | ERROR    | core.base_page:click_element:89 - Failed to click element: xpath=//android.view.ViewGroup[@content-desc="Personal Info"], Error: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/qingqinfang/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-07-15 01:23:20 | ERROR    | pages.personal_infomation_page:click_personal_info:269 - Failed to Click the personal_info: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/qingqinfang/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-07-15 01:23:20 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_NAF_3_4_0_modify_name
+2025-07-15 01:23:20 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:53 - Test completed, taking screenshot
+2025-07-15 01:23:20 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-15 01:23:20 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:63 - App restarted after test completion
+2025-07-15 01:23:20 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function
+2025-07-15 01:23:21 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_3_4_0_modify_name
+2025-07-15 01:23:21 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-15 01:23:21 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:29 - Setting up test environment with app restart
+2025-07-15 01:23:21 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-15 01:23:21 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:37 - App restarted successfully
+2025-07-15 01:23:24 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:48 - Test environment setup completed
+2025-07-15 01:23:31 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-15 01:23:31 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-15 01:23:31 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:test_NAF_3_4_0_modify_name:211 - Enter user profile
+2025-07-15 01:23:34 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-15 01:23:34 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-15 01:23:34 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-15 01:24:06 | ERROR    | core.base_page:click_element:89 - Failed to click element: xpath=//android.view.ViewGroup[@content-desc="Personal Info"], Error: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/qingqinfang/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-07-15 01:24:06 | ERROR    | pages.personal_infomation_page:click_personal_info:269 - Failed to Click the personal_info: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/qingqinfang/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-07-15 01:24:06 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_NAF_3_4_0_modify_name
+2025-07-15 01:24:06 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:53 - Test completed, taking screenshot
+2025-07-15 01:24:07 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-15 01:24:07 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:63 - App restarted after test completion
+2025-07-15 01:24:07 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function
+2025-07-15 01:24:08 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_3_4_0_modify_name
+2025-07-15 01:24:08 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-15 01:24:08 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:29 - Setting up test environment with app restart
+2025-07-15 01:24:08 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-15 01:24:08 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:37 - App restarted successfully
+2025-07-15 01:24:11 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:48 - Test environment setup completed
+2025-07-15 01:24:18 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-15 01:24:18 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-15 01:24:18 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:test_NAF_3_4_0_modify_name:211 - Enter user profile
+2025-07-15 01:24:20 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-15 01:24:20 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-15 01:24:20 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-15 01:24:53 | ERROR    | core.base_page:click_element:89 - Failed to click element: xpath=//android.view.ViewGroup[@content-desc="Personal Info"], Error: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/qingqinfang/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-07-15 01:24:53 | ERROR    | pages.personal_infomation_page:click_personal_info:269 - Failed to Click the personal_info: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/qingqinfang/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-07-15 01:24:53 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_NAF_3_4_0_modify_name
+2025-07-15 01:24:53 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:53 - Test completed, taking screenshot
+2025-07-15 01:24:53 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-15 01:24:53 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:63 - App restarted after test completion
+2025-07-15 01:24:53 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function
