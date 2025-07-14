@@ -1,0 +1,75 @@
+2025-07-14 20:23:18 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_3_7_0_change_stage
+2025-07-14 20:23:18 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-14 20:23:18 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:29 - Setting up test environment with app restart
+2025-07-14 20:23:18 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 20:23:18 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:37 - App restarted successfully
+2025-07-14 20:23:21 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:48 - Test environment setup completed
+2025-07-14 20:23:29 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-14 20:23:29 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-14 20:23:29 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:test_NAF_3_7_0_change_stage:422 - Enter user profile
+2025-07-14 20:23:32 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-14 20:23:32 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-14 20:23:35 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc="Edit"]
+2025-07-14 20:23:35 | INFO     | pages.personal_infomation_page:click_stage_edit:173 - Click the current stage edit button
+2025-07-14 20:23:35 | INFO     | pages.personal_infomation_page:click_stage_to_change:182 - Random Choice is Postpartum, to change
+2025-07-14 20:23:37 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc="Postpartum"]
+2025-07-14 20:23:39 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text="I understand"]
+2025-07-14 20:23:41 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-14 20:23:45 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text="Continue"]
+2025-07-14 20:24:16 | ERROR    | core.base_page:click_element:89 - Failed to click element: xpath=//android.view.ViewGroup[@content-desc="Yes"], Error: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/qingqinfang/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-07-14 20:24:16 | ERROR    | pages.personal_infomation_page:click_stage_to_change:233 - Failed to change stage: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/qingqinfang/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-07-14 20:24:16 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_NAF_3_7_0_change_stage
+2025-07-14 20:24:16 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:53 - Test completed, taking screenshot
+2025-07-14 20:24:16 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 20:24:16 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:63 - App restarted after test completion
+2025-07-14 20:24:16 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function
+2025-07-14 20:24:17 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_3_7_0_change_stage
+2025-07-14 20:24:17 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-14 20:24:17 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:29 - Setting up test environment with app restart
+2025-07-14 20:24:18 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 20:24:18 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:37 - App restarted successfully
+2025-07-14 20:24:21 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:48 - Test environment setup completed
+2025-07-14 20:24:29 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-14 20:24:29 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-14 20:24:29 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:test_NAF_3_7_0_change_stage:422 - Enter user profile
+2025-07-14 20:24:31 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-14 20:24:31 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-14 20:24:34 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc="Edit"]
+2025-07-14 20:24:34 | INFO     | pages.personal_infomation_page:click_stage_edit:173 - Click the current stage edit button
+2025-07-14 20:24:34 | INFO     | pages.personal_infomation_page:click_stage_to_change:182 - Random Choice is Pregnant, to change
+2025-07-14 20:24:36 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc="Pregnant"]
+2025-07-14 20:24:39 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text="I understand"]
+2025-07-14 20:24:41 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-14 20:24:44 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text="Continue"]
+2025-07-14 20:24:44 | INFO     | pages.personal_infomation_page:click_stage_to_change:230 - Changed stage
+2025-07-14 20:25:20 | ERROR    | core.base_page:click_element:89 - Failed to click element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup, Error: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/qingqinfang/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-07-14 20:25:20 | ERROR    | pages.personal_infomation_page:click_user_profile:68 - Failed to click login button: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/qingqinfang/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2025-07-14 20:25:20 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_NAF_3_7_0_change_stage
+2025-07-14 20:25:20 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:53 - Test completed, taking screenshot
+2025-07-14 20:25:20 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 20:25:20 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:63 - App restarted after test completion
+2025-07-14 20:25:20 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function

@@ -1,0 +1,25 @@
+2025-07-14 20:22:15 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_3_4_0_modify_mobile
+2025-07-14 20:22:15 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-14 20:22:15 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:29 - Setting up test environment with app restart
+2025-07-14 20:22:16 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 20:22:16 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:37 - App restarted successfully
+2025-07-14 20:22:19 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:48 - Test environment setup completed
+2025-07-14 20:22:26 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-14 20:22:26 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-14 20:22:26 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:test_NAF_3_4_0_modify_mobile:244 - Enter user profile
+2025-07-14 20:22:29 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-14 20:22:29 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-14 20:22:29 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1080, 'height': 2340}
+2025-07-14 20:22:33 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc="Personal Info"]
+2025-07-14 20:22:33 | INFO     | pages.personal_infomation_page:click_personal_info:261 - Click the personal_info
+2025-07-14 20:22:33 | INFO     | pages.personal_infomation_page:change_mobile:308 - Click into change mobile
+2025-07-14 20:22:36 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text="Phone Number"]/following-sibling::android.view.ViewGroup
+2025-07-14 20:22:36 | INFO     | pages.personal_infomation_page:change_mobile:314 - Enter the new mobile
+2025-07-14 20:22:39 | INFO     | core.base_page:send_keys_to_element:107 - Sent keys to element: xpath=//android.widget.EditText, Text: 213-282-3145
+2025-07-14 20:22:44 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.view.ViewGroup[@content-desc="Save Changes"]
+2025-07-14 20:22:44 | INFO     | pages.personal_infomation_page:if_mobile_changed:334 - +1 213-282-3145 is present
+2025-07-14 20:22:44 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_NAF_3_4_0_modify_mobile
+2025-07-14 20:22:44 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:53 - Test completed, taking screenshot
+2025-07-14 20:22:44 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 20:22:44 | INFO     | natal_mobile_auto.tests.test_3_Account_Setup:setup_and_teardown:63 - App restarted after test completion
+2025-07-14 20:22:44 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function

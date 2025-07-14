@@ -1,0 +1,25 @@
+2025-07-14 20:29:24 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_4_10_0_mark_step_as_complete
+2025-07-14 20:29:24 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-14 20:29:25 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 20:29:25 | INFO     | natal_mobile_auto.tests.test_4_Program_Management:setup_and_teardown:21 - App restarted successfully
+2025-07-14 20:29:33 | INFO     | pages.program_list_page:wait_for_programs_page:34 - Programs page loaded successfully (found 'people joined' text)
+2025-07-14 20:29:34 | INFO     | pages.program_list_page:get_program_cards:67 - Found 1 program cards (each with 'people joined' text)
+2025-07-14 20:29:34 | INFO     | pages.program_list_page:click_program_card:80 - Clicked program card at index 0
+2025-07-14 20:29:38 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-14 20:29:38 | INFO     | pages.program_detail_page:error_getting_offers_tip:199 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-14 20:29:57 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//*[contains(@text, 'Video 1')]
+2025-07-14 20:29:57 | INFO     | pages.program_detail_page:click_day_1:223 - Successfully clicked Day 1 video directly
+2025-07-14 20:30:02 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-14 20:30:02 | INFO     | pages.program_detail_page:error_getting_offers_tip:199 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-14 20:30:05 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//*[contains(@text, 'Mark as complete')]
+2025-07-14 20:30:10 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//*[contains(@text, 'Back Home')]
+2025-07-14 20:30:12 | INFO     | pages.program_list_page:get_program_cards:67 - Found 1 program cards (each with 'people joined' text)
+2025-07-14 20:30:12 | INFO     | pages.program_list_page:click_program_card:80 - Clicked program card at index 0
+2025-07-14 20:30:17 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-14 20:30:17 | INFO     | pages.program_detail_page:error_getting_offers_tip:199 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-14 20:30:18 | INFO     | natal_mobile_auto.tests.test_4_Program_Management:test_NAF_4_10_0_mark_step_as_complete:264 - NAF-133: Mark step as complete flow passed!
+2025-07-14 20:30:18 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_NAF_4_10_0_mark_step_as_complete
+2025-07-14 20:30:18 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-14 20:30:18 | INFO     | natal_mobile_auto.tests.test_4_Program_Management:setup_and_teardown:33 - App restarted after test completion
+2025-07-14 20:30:18 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function
+2025-07-14 20:30:18 | INFO     | natal_mobile_auto.conftest:setup_test_session:54 - Test session teardown

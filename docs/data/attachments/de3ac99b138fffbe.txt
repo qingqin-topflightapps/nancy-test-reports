@@ -1,7 +1,0 @@
-Notification text to mark as unread: 'Test comment KZErSp'
-Mark as unread button is visible, clicking...
-Notification 'Test comment KZErSp' not found in Unread tab
-Notification text to mark as unread: 'Auto post 7ZpgPN'
-Mark as unread button is visible, clicking...
-Found notification 'Auto post 7ZpgPN' in Unread tab
-Notification marked as unread successfully.
