@@ -1,0 +1,55 @@
+2025-07-18 18:40:15 | INFO     | natal_mobile_auto.conftest:setup_test_session:50 - Test session setup completed
+2025-07-18 18:40:15 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-07-18 18:40:15 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:setup_and_teardown:25 - Setting up logout test environment with app restart
+2025-07-18 18:40:15 | INFO     | core.driver_manager:_create_driver:43 - {'platformName': 'Android', 'platformVersion': '13', 'deviceName': 'emulator-5554', 'appPackage': 'com.natalllc.dev', 'appActivity': 'com.natalllc.dev.MainActivity', 'automationName': 'UiAutomator2', 'noReset': True, 'newCommandTimeout': 300, 'waitForIdleTimeout': 3000, 'uiautomator2ServerInstallTimeout': 60000, 'uiautomator2ServerLaunchTimeout': 60000, 'androidInstallTimeout': 90000, 'adbExecTimeout': 20000, 'autoGrantPermissions': True, 'skipServerInstallation': False, 'ignoreHiddenApiPolicyError': True}
+2025-07-18 18:40:15 | INFO     | core.driver_manager:_create_driver:59 - Connecting to Appium server: http://127.0.0.1:4723
+2025-07-18 18:40:19 | INFO     | core.driver_manager:_create_driver:65 - WebDriver created successfully
+2025-07-18 18:40:20 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-18 18:40:20 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:setup_and_teardown:33 - App restarted successfully
+2025-07-18 18:40:23 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:setup_and_teardown:44 - Test environment setup completed
+2025-07-18 18:40:23 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:test_logout_and_relogin:92 - Step 1: Performing logout
+2025-07-18 18:40:23 | INFO     | pages.personal_infomation_page:logout:385 - Starting logout process with stability improvements
+2025-07-18 18:40:31 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-18 18:40:31 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-18 18:40:35 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-18 18:40:35 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-18 18:40:37 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1440, 'height': 3120}
+2025-07-18 18:40:39 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1440, 'height': 3120}
+2025-07-18 18:40:41 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1440, 'height': 3120}
+2025-07-18 18:40:42 | INFO     | pages.personal_infomation_page:scroll_to_bottom:364 - Scrolled to bottom of page
+2025-07-18 18:40:45 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1440, 'height': 3120}
+2025-07-18 18:40:47 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1440, 'height': 3120}
+2025-07-18 18:40:49 | INFO     | core.base_page:swipe:173 - 设备的尺寸为{'width': 1440, 'height': 3120}
+2025-07-18 18:40:51 | INFO     | pages.personal_infomation_page:scroll_to_bottom:364 - Scrolled to bottom of page
+2025-07-18 18:40:53 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text="Log out"]
+2025-07-18 18:40:53 | INFO     | pages.personal_infomation_page:click_logout_button:377 - Clicked Log out button - logout completed
+2025-07-18 18:40:58 | INFO     | pages.personal_infomation_page:logout:403 - Logout completed successfully
+2025-07-18 18:40:58 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:test_logout_and_relogin:96 - Step 2: Verifying logout was successful
+2025-07-18 18:41:01 | INFO     | pages.personal_infomation_page:is_logged_out:424 - Successfully logged out - back to welcome page
+2025-07-18 18:41:02 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:test_logout_and_relogin:102 - Step 3: Attempting to relogin
+2025-07-18 18:41:02 | INFO     | pages.login_page:login:99 - Starting login process with stability improvements
+2025-07-18 18:41:02 | INFO     | pages.login_page:wait_for_welcome_screen:26 - Welcome screen loaded successfully
+2025-07-18 18:41:07 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Log in']/..
+2025-07-18 18:41:07 | INFO     | pages.login_page:click_login_button:35 - Clicked login button on welcome screen
+2025-07-18 18:41:10 | INFO     | pages.login_page:wait_for_login_screen:44 - Login screen loaded successfully
+2025-07-18 18:41:15 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Sign in with your email']/..
+2025-07-18 18:41:15 | INFO     | pages.login_page:click_email_login_button:53 - Clicked email login button
+2025-07-18 18:41:18 | INFO     | pages.login_page:wait_for_email_login_screen:62 - Email login screen loaded successfully
+2025-07-18 18:41:21 | INFO     | core.base_page:send_keys_to_element:107 - Sent keys to element: xpath=//android.widget.EditText[1], Text: qingqin@topflightapps.com
+2025-07-18 18:41:23 | INFO     | pages.login_page:enter_email:72 - Entered email: qingqin@topflightapps.com
+2025-07-18 18:41:26 | INFO     | core.base_page:send_keys_to_element:107 - Sent keys to element: xpath=//android.widget.EditText[2], Text: Aa11111.
+2025-07-18 18:41:29 | INFO     | pages.login_page:enter_password:82 - Entered password
+2025-07-18 18:41:31 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Log in']/..
+2025-07-18 18:41:31 | INFO     | pages.login_page:click_final_login_button:91 - Clicked final login button
+2025-07-18 18:41:36 | INFO     | pages.login_page:login:128 - Login process completed successfully
+2025-07-18 18:41:36 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:test_logout_and_relogin:106 - Step 4: Verifying relogin was successful
+2025-07-18 18:41:39 | INFO     | core.base_page:click_element:87 - Clicked element: xpath=//android.widget.TextView[@text='Programs']/preceding-sibling::android.view.ViewGroup
+2025-07-18 18:41:39 | INFO     | pages.personal_infomation_page:click_user_profile:66 - Clicked the user profile avator
+2025-07-18 18:41:44 | INFO     | core.base_page:click_element:87 - Clicked element: id=android:id/button1
+2025-07-18 18:41:44 | INFO     | pages.personal_infomation_page:error_getting_offers_tip:78 - Clicked the error getting offers tips ok button, should not happen in real phone
+2025-07-18 18:41:44 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:test_logout_and_relogin:120 - Logout and relogin test passed successfully
+2025-07-18 18:41:44 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:104 - Completed test: test_logout_and_relogin
+2025-07-18 18:41:44 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:setup_and_teardown:49 - Logout test completed, taking screenshot
+2025-07-18 18:41:44 | INFO     | core.driver_manager:restart_app:103 - App restarted successfully
+2025-07-18 18:41:44 | INFO     | natal_mobile_auto.tests.test_2_Authentication_logout:setup_and_teardown:59 - App restarted after test completion
+2025-07-18 18:41:44 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function
