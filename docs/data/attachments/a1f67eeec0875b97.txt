@@ -1,1 +1,0 @@
-Clicked the first 'Mark as read' button on the page.
