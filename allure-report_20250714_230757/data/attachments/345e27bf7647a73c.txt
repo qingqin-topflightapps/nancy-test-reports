@@ -1,2 +1,0 @@
-2025-07-14 23:19:47.239 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:99 - Starting test: test_NAF_3_2_0_update_bio
-2025-07-14 23:19:47.240 | INFO     | natal_mobile_auto.conftest:setup_test_session:41 - Setting up test session
