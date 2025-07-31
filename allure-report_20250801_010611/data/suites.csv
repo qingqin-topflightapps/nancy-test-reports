@@ -1,0 +1,406 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"
+Test that an admin user can upload a video thumbnail.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Video section
+4. Upload a new video with random title
+5. Upload/Change thumbnail for the video
+6. Verify thumbnail is successfully uploaded
+","31495","test_NAF_8_12_0_Upload_Thumbnail","tests","Fri Aug 01 01:10:42 CST 2025","passed","Fri Aug 01 01:11:13 CST 2025","","test_8_CMS_Video_Management","",""
+"
+Test that an admin user can select a video and update its details.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Video section
+4. Upload a new video with random title
+5. Select the uploaded video
+6. Update video details
+7. Verify changes are saved successfully
+","24722","test_NAF_8_8_0_Update_Video_Details","tests","Fri Aug 01 01:09:17 CST 2025","passed","Fri Aug 01 01:09:42 CST 2025","","test_8_CMS_Video_Management","",""
+"
+Test Case 204: Verify the ""Mark as unread"" functionality after marking as read.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Switch to Read tab
+5. Mark the first read notification as unread
+6. Verify notification has been marked as unread
+","13196","test_CMS_204_Mark_Notification_As_Unread","tests","Fri Aug 01 01:13:38 CST 2025","passed","Fri Aug 01 01:13:51 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test Case 208: Verify notification status persists after page reload.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Mark a notification as read/unread
+5. Reload the page
+6. Verify notification moved to correct tab
+7. Verify status persists after reload
+","16865","test_CMS_208_Notification_Status_After_Page_Reload","tests","Fri Aug 01 01:14:09 CST 2025","passed","Fri Aug 01 01:14:25 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test that an admin user can delete a video using the 3 dots menu.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Video section
+4. Upload a new video with random title
+5. Delete the video using 3 dots menu
+6. Verify video is successfully deleted
+","34456","test_NAF_8_10_0_Delete_Video","tests","Fri Aug 01 01:10:07 CST 2025","passed","Fri Aug 01 01:10:42 CST 2025","","test_8_CMS_Video_Management","",""
+"
+Test Case 210: Verify ability to reply to a comment from notification.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Check for unread notifications
+5. If no unread notifications, switch to Read tab
+6. Click on the first notification entry
+7. Reply to the selected comment
+8. Verify reply functionality works correctly
+","18467","test_CMS_210_Reply_To_Comment","tests","Fri Aug 01 01:14:33 CST 2025","passed","Fri Aug 01 01:14:52 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test that an admin user can upload a new video to the platform with unpublished status.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Video section
+4. Upload a new video with random title
+5. Verify video is uploaded with unpublished status
+6. Verify video appears in the videos list
+","24319","test_NAF_8_7_0_Upload_Video_With_Unpublished_Status","tests","Fri Aug 01 01:08:53 CST 2025","passed","Fri Aug 01 01:09:17 CST 2025","","test_8_CMS_Video_Management","",""
+"
+Test Case 205: Verify that marking multiple notifications as read works correctly.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Mark multiple notifications as read (up to 3)
+5. Verify each notification is marked as read
+","7955","test_CMS_205_Mark_Multiple_Notifications_As_Read","tests","Fri Aug 01 01:13:51 CST 2025","passed","Fri Aug 01 01:13:59 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test Case 214: Verify ability to delete comment from comment/question thread.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Check for unread notifications
+5. If no unread notifications, switch to Read tab
+6. Open the first comment thread
+7. Delete comment in thread
+8. Verify comment is deleted successfully
+","29368","test_CMS_214_Delete_From_Comment_Thread","tests","Fri Aug 01 01:16:34 CST 2025","failed","Fri Aug 01 01:17:03 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test Case 199: Verify the notifications page loads correctly.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Verify tabs are displayed correctly
+5. Verify table headers are present
+6. Verify notification rows are loaded
+","6889","test_CMS_199_Verify_Notifications_Page","tests","Fri Aug 01 01:12:52 CST 2025","passed","Fri Aug 01 01:12:59 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test that a user with admin role can access the profile page and edit profile information.
+
+Test Steps:
+1. Launch the browser
+2. Go to the login page
+3. Enter the admin credentials
+4. Click the login button
+5. Verify that the user is logged in
+6. Click the profile button
+7. Verify that the user is on the profile page
+8. Click the edit profile button
+9. Enter the new profile information
+10. Click the save button
+11. Verify that the profile information is updated
+","31130","test_NAF_7_4_0_Edit_Profile","tests","Fri Aug 01 01:06:44 CST 2025","passed","Fri Aug 01 01:07:15 CST 2025","","test_7_CMS_Authentication","",""
+"
+Test that an admin user can view all programs list.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Programs section
+4. Verify programs list is displayed
+5. Verify all programs are accessible
+","6465","test_NAF_920_View_Programs_List","tests","Fri Aug 01 01:11:18 CST 2025","passed","Fri Aug 01 01:11:25 CST 2025","","test_9_Programs_Management","",""
+"
+Test that an admin user can search program by program's title.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Programs section
+4. Create a new program with random title
+5. Search for the created program by title
+6. Verify search results display the correct program
+","30191","test_NAF_930_Search_Program","tests","Fri Aug 01 01:11:25 CST 2025","passed","Fri Aug 01 01:11:55 CST 2025","","test_9_Programs_Management","",""
+"
+Test that an admin user can navigate to the Video section of the CMS platform through the sidebar menu.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Video section via sidebar menu
+4. Verify successful navigation to video section
+","4996","test_NAF_8_1_0_Navigate_To_Video_Section","tests","Fri Aug 01 01:07:51 CST 2025","passed","Fri Aug 01 01:07:56 CST 2025","","test_8_CMS_Video_Management","",""
+"
+Test that an admin can make posts in the communities and posts should be shown to end users in ""All"" and ""Admin"" tabs.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Community page
+4. Create a post with image and publish it
+5. Verify the post is created and displayed
+6. Create another post and save as draft
+","54351","test_12_2_0_Create_Post_In_Community","tests","Fri Aug 01 01:17:22 CST 2025","passed","Fri Aug 01 01:18:16 CST 2025","","test_12_CMS_Communities","",""
+"
+Test Case 209: Verify ability to access comment from notification.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Check for unread notifications
+5. If no unread notifications, switch to Read tab
+6. Click on the first notification entry
+7. Verify user is redirected to Comments view
+8. Verify comment view access is successful
+","7931","test_CMS_209_Access_Comment_From_Notification","tests","Fri Aug 01 01:14:25 CST 2025","passed","Fri Aug 01 01:14:33 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test Case 211: Verify ability to reply to program step thread from notification.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Check for unread notifications
+5. If no unread notifications, switch to Read tab
+6. Click on the first notification entry
+7. Reply to the program step thread
+8. Verify reply functionality works correctly
+","20307","test_CMS_211_Reply_To_Program_Step_Thread","tests","Fri Aug 01 01:14:52 CST 2025","passed","Fri Aug 01 01:15:12 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test that an admin can delete and edit own posts, replies and posts/replies created by others.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Postpartum community page
+4. Create a new post with image
+5. Publish the post and verify creation
+6. Edit the post with new content
+7. Add a comment to the post
+8. Delete the comment
+9. Delete the post
+","41263","test_12_4_0_delete_edit_own_and_others_post","tests","Fri Aug 01 01:18:16 CST 2025","passed","Fri Aug 01 01:18:57 CST 2025","","test_12_CMS_Communities","",""
+"
+Test that an admin user can search videos by video title.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Video section
+4. Upload a new video with random title
+5. Search for the uploaded video by title
+6. Verify search results display the correct video
+","28753","test_NAF_8_3_0_Search_Videos","tests","Fri Aug 01 01:08:24 CST 2025","passed","Fri Aug 01 01:08:53 CST 2025","","test_8_CMS_Video_Management","",""
+"
+Test Case 212: Verify ability to close comments view.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Check for unread notifications
+5. If no unread notifications, switch to Read tab
+6. Click on the first notification entry
+7. Close the comments view using Escape key
+8. Verify comments view is closed successfully
+","7825","test_CMS_212_Close_Comments_View","tests","Fri Aug 01 01:15:12 CST 2025","passed","Fri Aug 01 01:15:20 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test that a user with admin role has access to the whole list of mobile users, 
+where admins are identified by ""admin"" role.
+
+Test Steps:
+1. Launch the browser
+2. Go to the login page
+3. Enter the admin credentials
+4. Click the login button
+5. Verify that the user is logged in
+6. Edit user role
+7. Verify that the user role is updated
+","17356","test_NAF_7_6_0_Edit_User_Role","tests","Fri Aug 01 01:07:34 CST 2025","passed","Fri Aug 01 01:07:51 CST 2025","","test_7_CMS_Authentication","",""
+"
+Test that an admin user can create and edit programs.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Programs section
+4. Create a new program with random title
+5. Wait for page to load after program creation
+6. Edit the created program
+7. Verify changes are saved successfully
+","27145","test_NAF_980_Edit_Program","tests","Fri Aug 01 01:12:25 CST 2025","passed","Fri Aug 01 01:12:52 CST 2025","","test_9_Programs_Management","",""
+"
+Test Case 202: Verify the switching between ""Unread"" and ""Read"" tabs.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Switch to Read tab
+5. Switch to Unread tab
+6. Verify tab switching works correctly
+","6654","test_CMS_202_Switch_Between_Tabs","tests","Fri Aug 01 01:13:08 CST 2025","passed","Fri Aug 01 01:13:15 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test Case 207: Verify marking a single notification as read and unread.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Mark a single notification as read
+5. Mark the same notification as unread
+6. Verify status changes correctly
+","9898","test_CMS_207_Mark_Single_Notification_As_Read_Unread","tests","Fri Aug 01 01:13:59 CST 2025","passed","Fri Aug 01 01:14:09 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test that an admin user can pin and unpin selected posts.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Postpartum community page
+4. Create a new post with image
+5. Publish the post and verify creation
+6. Pin the post
+7. Unpin the post
+8. Verify pin/unpin functionality works correctly
+","58490","test_12_6_0_pin_unpin_community_post","tests","Fri Aug 01 01:18:57 CST 2025","passed","Fri Aug 01 01:19:56 CST 2025","","test_12_CMS_Communities","",""
+"
+Test that an admin user can navigate to the program section of the app through the side menu.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Programs section via side menu
+4. Verify successful navigation to programs section
+","5414","test_NAF_9_1_0_Navigate_To_Programs_Section","tests","Fri Aug 01 01:11:13 CST 2025","passed","Fri Aug 01 01:11:18 CST 2025","","test_9_Programs_Management","",""
+"
+Test that an admin user can publish a video and verify it remains published after logout/login.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Video section
+4. Upload a new video with random title
+5. Publish the video
+6. Logout and login again
+7. Verify video is still published
+","25077","test_NAF_8_9_0_Publish_Video","tests","Fri Aug 01 01:09:42 CST 2025","passed","Fri Aug 01 01:10:07 CST 2025","","test_8_CMS_Video_Management","",""
+"
+Test that a user with admin role can successfully log out from the CMS.
+
+Test Steps:
+1. Launch the browser
+2. Go to the login page
+3. Enter the admin credentials
+4. Click the login button
+5. Verify that the user is logged in
+6. Click the logout button
+7. Verify that the user is logged out
+","17110","test_NAF_7_3_0_Logout_of_AdminPanel","tests","Fri Aug 01 01:06:27 CST 2025","passed","Fri Aug 01 01:06:44 CST 2025","","test_7_CMS_Authentication","",""
+"
+Test Case 213: Verify ability to delete notification from 3 dots menu.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Check for unread notifications
+5. If no unread notifications, switch to Read tab
+6. Delete notification from 3 dots menu
+7. Verify notification is deleted successfully
+","11463","test_CMS_213_Delete_From_Three_Dots_Menu","tests","Fri Aug 01 01:15:20 CST 2025","passed","Fri Aug 01 01:15:31 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test that a user with admin role can login to the content management platform 
+using the same credentials as for the mobile app.
+
+Test Steps:
+1. Launch the browser
+2. Go to the login page
+3. Enter the admin credentials
+4. Click the login button
+5. Verify that the user is logged in
+","10932","test_NAF_7_2_0_Login_As_Admin","tests","Fri Aug 01 01:06:16 CST 2025","passed","Fri Aug 01 01:06:27 CST 2025","","test_7_CMS_Authentication","",""
+"
+Test that an admin user can view all videos uploaded to the CMS platform.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Video section
+4. Verify all video columns are displayed correctly
+5. Verify videos list is accessible
+","8089","test_NAF_8_2_0_View_All_Videos_Uploaded","tests","Fri Aug 01 01:07:56 CST 2025","passed","Fri Aug 01 01:08:04 CST 2025","","test_8_CMS_Video_Management","",""
+"
+Test that an admin user can delete program using the 3 dots menu.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Programs section
+4. Create a new program with random title
+5. Delete the program using 3 dots menu
+6. Verify program is successfully deleted
+","29762","test_NAF_960_Delete_Program","tests","Fri Aug 01 01:11:55 CST 2025","passed","Fri Aug 01 01:12:25 CST 2025","","test_9_Programs_Management","",""
+"
+Test Case 201: Verify the ""Mark as read"" button functionality.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Mark the first notification as read
+5. Verify notification status changes
+","9400","test_CMS_201_Mark_First_Notification_As_Read","tests","Fri Aug 01 01:12:59 CST 2025","passed","Fri Aug 01 01:13:08 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test Case 203: Verify that there is at least one unread notification.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Check for unread notifications
+5. If no unread notifications, switch to Read tab
+6. Verify notification columns are visible
+7. Verify all required columns are present
+","11940","test_CMS_203_Verify_Unread_Notifications_Exist","tests","Fri Aug 01 01:13:26 CST 2025","passed","Fri Aug 01 01:13:38 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test that an admin can view all communities from the CMS.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Postpartum community page
+4. Verify visibility of all community groups
+5. Check each community individually (Pregnant, Trying to Conceive, Postpartum)
+","18182","test_12_1_0_View_All_Communities","tests","Fri Aug 01 01:17:03 CST 2025","passed","Fri Aug 01 01:17:22 CST 2025","","test_12_CMS_Communities","",""
