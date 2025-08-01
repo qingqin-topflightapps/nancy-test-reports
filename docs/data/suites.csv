@@ -1,39 +1,5 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
 "
-Test that an admin user can upload a video thumbnail.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Video section
-4. Upload a new video with random title
-5. Upload/Change thumbnail for the video
-6. Verify thumbnail is successfully uploaded
-","31495","test_NAF_8_12_0_Upload_Thumbnail","tests","Fri Aug 01 01:10:42 CST 2025","passed","Fri Aug 01 01:11:13 CST 2025","","test_8_CMS_Video_Management","",""
-"
-Test that an admin user can select a video and update its details.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Video section
-4. Upload a new video with random title
-5. Select the uploaded video
-6. Update video details
-7. Verify changes are saved successfully
-","24722","test_NAF_8_8_0_Update_Video_Details","tests","Fri Aug 01 01:09:17 CST 2025","passed","Fri Aug 01 01:09:42 CST 2025","","test_8_CMS_Video_Management","",""
-"
-Test Case 204: Verify the ""Mark as unread"" functionality after marking as read.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Notifications page
-4. Switch to Read tab
-5. Mark the first read notification as unread
-6. Verify notification has been marked as unread
-","13196","test_CMS_204_Mark_Notification_As_Unread","tests","Fri Aug 01 01:13:38 CST 2025","passed","Fri Aug 01 01:13:51 CST 2025","","test_11_CMS_Notifications","",""
-"
 Test Case 208: Verify notification status persists after page reload.
 
 Test Steps:
@@ -44,18 +10,450 @@ Test Steps:
 5. Reload the page
 6. Verify notification moved to correct tab
 7. Verify status persists after reload
-","16865","test_CMS_208_Notification_Status_After_Page_Reload","tests","Fri Aug 01 01:14:09 CST 2025","passed","Fri Aug 01 01:14:25 CST 2025","","test_11_CMS_Notifications","",""
+","13017","test_CMS_208_Notification_Status_After_Page_Reload","tests","Fri Aug 01 21:01:43 CST 2025","passed","Fri Aug 01 21:01:56 CST 2025","","test_11_CMS_Notifications","",""
 "
-Test that an admin user can delete a video using the 3 dots menu.
+    Test Case: NAF-272
+    As a user, I want to interact with post: ""Like"" post, leave comments
+    Scenario: Verify adding a comment to a post
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Find a post with comments
+    4. Click on comment button
+    5. Add a new comment
+    6. Verify comment is added successfully
+    
+    Expected Result: User should be able to add comments to posts
+    ","0","test_NAF_14_4_0_verify_adding_comment_to_post","tests.ios","Fri Aug 01 21:31:29 CST 2025","passed","Fri Aug 01 21:31:29 CST 2025","TestCommunityManagement","test_14_Community","",""
+"
+    Test Case: NAF-55
+    As a registered user I can view and update my profile settings
+    Scenario: Modify Name
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Enter name
+    5. Click on ""Save"" button
+    ","31053","test_NAF_3_4_0_modify_name","tests.android","Fri Aug 01 20:36:34 CST 2025","passed","Fri Aug 01 20:37:05 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+    Test Case: NAF-271
+    As a user, I want to interact with post: ""Like"" post, leave comments
+    Scenario: Verify liking a post
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Find the first like button
+    4. Record current like count
+    5. Click like button
+    6. Verify like count changes as expected
+    
+    Expected Result: User should be able to like posts and see like count change
+    ","12805","test_NAF_14_4_0_verify_liking_post","tests.android","Fri Aug 01 21:14:22 CST 2025","passed","Fri Aug 01 21:14:35 CST 2025","TestCommunityManagement","test_14_Community","",""
+"
+Test that an admin user can delete program using the 3 dots menu.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Programs section
+4. Create a new program with random title
+5. Delete the program using 3 dots menu
+6. Verify program is successfully deleted
+","27204","test_NAF_960_Delete_Program","tests","Fri Aug 01 20:57:44 CST 2025","passed","Fri Aug 01 20:58:12 CST 2025","","test_9_Programs_Management","",""
+"
+    Test Case: NAF-40
+    As a registered user I can view and update profile image
+    Scenario: Edit Profile Picture
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Click on ""Take a picture"" button (might not stable on simulator)
+    5. Select a photo from the device
+    
+    Note: This test is skipped because camera functionality is not supported in the current simulator
+    ","9017","test_NAF_3_3_0_edit_profile_picture","tests.ios","Fri Aug 01 21:26:41 CST 2025","passed","Fri Aug 01 21:26:50 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+Test Case 207: Verify marking a single notification as read and unread.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Mark a single notification as read
+5. Mark the same notification as unread
+6. Verify status changes correctly
+","10321","test_CMS_207_Mark_Single_Notification_As_Read_Unread","tests","Fri Aug 01 21:01:33 CST 2025","passed","Fri Aug 01 21:01:43 CST 2025","","test_11_CMS_Notifications","",""
+"
+    Test Case: NAF-266
+    As a user I want to create text or text + image posts to share with the community
+    Scenario: Verify creating a text-only post
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Click ""NEW POST"" button
+    4. Enter text content
+    5. Click ""Post"" button
+    6. Verify post is created successfully
+    
+    Expected Result: Text-only post should be created and visible in the community feed
+    ","0","test_NAF_14_2_0_create_text_only_post","tests.ios","Fri Aug 01 21:30:49 CST 2025","passed","Fri Aug 01 21:30:49 CST 2025","TestCommunityManagement","test_14_Community","",""
+"
+Test Case 202: Verify the switching between ""Unread"" and ""Read"" tabs.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Switch to Read tab
+5. Switch to Unread tab
+6. Verify tab switching works correctly
+","5090","test_CMS_202_Switch_Between_Tabs","tests","Fri Aug 01 21:00:57 CST 2025","passed","Fri Aug 01 21:01:02 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test that a user with admin role can successfully log out from the CMS.
+
+Test Steps:
+1. Launch the browser
+2. Go to the login page
+3. Enter the admin credentials
+4. Click the login button
+5. Verify that the user is logged in
+6. Click the logout button
+7. Verify that the user is logged out
+","9419","test_NAF_7_3_0_Logout_of_AdminPanel","tests","Fri Aug 01 20:54:06 CST 2025","passed","Fri Aug 01 20:54:16 CST 2025","","test_7_CMS_Authentication","",""
+"
+    Test Case: NAF-15
+    As a user, I want to log in with my email and password
+    Scenario: Login Unsuccessful due to Non-existent Email
+    
+    Steps:
+    1. Open the app
+    2. Click on ""Log in"" button
+    3. Click on ""Sign in with your email"" button
+    4. Enter non-existent email: test@example.com
+    5. Enter password: testpassword
+    6. Click ""Log in"" button    
+    7. Verify error message appears
+    
+    Expected Result: Error message ""There is no account associated with this email. Please sign up."" should be displayed
+    ","28816","test_NAF_2_2_0_login_with_wrong_email","tests.ios","Fri Aug 01 21:23:03 CST 2025","passed","Fri Aug 01 21:23:32 CST 2025","TestAuthentication","test_2_Authentication","",""
+"
+    Test Case: NAF-91
+    As a user during onboarding, I should be able to start one of the recommended programs right from the onboarding
+    Scenario: Valid program selection and start
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Click on first recommended program
+    3. Verify 'Start Program' button is displayed
+    4. Click on 'Start Program' button
+    5. Finish first day of the program
+    ","65559","test_NAF_4_2_0_valid_program_selection_and_start","tests.android","Fri Aug 01 20:43:14 CST 2025","passed","Fri Aug 01 20:44:19 CST 2025","TestProgramManagement","test_4_Program_Management","",""
+"
+    Test Case: NAF-433
+    As a user, I want to be able to log out from the app
+    Scenario: Logout and Relogin
+    
+    Steps:
+    1. Open the app
+    2. Go to ""My Profile"" button
+    3. Click on ""Log out"" button
+    4. Verify successful logout
+    5. Click on ""Log in"" button
+    6. Verify successful login
+    
+    Expected Result: User should be successfully logged in and redirected to the main app
+    ","18650","test_logout_and_relogin","tests.ios","Fri Aug 01 21:33:26 CST 2025","broken","Fri Aug 01 21:33:45 CST 2025","TestLogout","test_2_Authentication_logout","",""
+"
+Test that a user with admin role can login to the content management platform 
+using the same credentials as for the mobile app.
+
+Test Steps:
+1. Launch the browser
+2. Go to the login page
+3. Enter the admin credentials
+4. Click the login button
+5. Verify that the user is logged in
+","5288","test_NAF_7_2_0_Login_As_Admin","tests","Fri Aug 01 20:54:01 CST 2025","passed","Fri Aug 01 20:54:06 CST 2025","","test_7_CMS_Authentication","",""
+"
+    Test Case: NAF-37, NAF-39
+    As a registered user I can view and update my bio
+    Scenario: Update Bio
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Enter bio content
+    5. Click on ""Save"" button
+    6. Verify bio content is updated
+    
+    Expected Result: Bio content is updated
+    ","29973","test_NAF_3_2_0_update_bio","tests.android","Fri Aug 01 20:35:58 CST 2025","passed","Fri Aug 01 20:36:28 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+Test Case 204: Verify the ""Mark as unread"" functionality after marking as read.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Switch to Read tab
+5. Mark the first read notification as unread
+6. Verify notification has been marked as unread
+","14092","test_CMS_204_Mark_Notification_As_Unread","tests","Fri Aug 01 21:01:14 CST 2025","passed","Fri Aug 01 21:01:28 CST 2025","","test_11_CMS_Notifications","",""
+"
+    Test Case: NAF-268
+    As a user I want to create text or text + image posts to share with the community
+    Scenario: Verify post fields after sending
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Click ""NEW POST"" button
+    4. Verify post input field is present and editable
+    5. Enter text content
+    6. Click ""Post"" button
+    7. Verify post fields are cleared after sending
+    
+    Expected Result: Post input field should be present, editable, and cleared after posting
+    ","0","test_NAF_14_2_0_verify_post_fields_after_sending","tests.ios","Fri Aug 01 21:30:58 CST 2025","passed","Fri Aug 01 21:30:58 CST 2025","TestCommunityManagement","test_14_Community","",""
+"
+    Test Case: NAF-14
+    As a user, I want to log in with my email and password
+    Scenario: Login Unsuccessful due to Incorrect Password
+    
+    Steps:
+    1. Open the app
+    2. Click on ""Log in"" button
+    3. Click on ""Sign in with your email"" button
+    4. Enter valid email: qingqin@topflightapps.com
+    5. Enter incorrect password: Aa1234567
+    6. Click ""Log in"" button
+    7. Verify error message appears
+    
+    Expected Result: Error message ""The password you entered is incorrect"" should be displayed
+    ","28645","test_NAF_2_2_0_login_with_wrong_password","tests.android","Fri Aug 01 20:32:05 CST 2025","passed","Fri Aug 01 20:32:34 CST 2025","TestAuthentication","test_2_Authentication","",""
+"
+    Test Case: NAF-47
+    As a registered user I can add my kids info in my profile page
+    Scenario: Delete Kids
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Add a child"" button
+    4. Enter child's name
+    5. Enter child's age
+    6. Click on ""Save"" button
+    7. Verify child's info is added
+    8. Click on ""Edit"" button
+    9. Click on ""Delete"" button
+    10. Verify child's info is deleted
+    ","45776","test_NAF_3_5_0_delete_kids","tests.android","Fri Aug 01 20:40:59 CST 2025","passed","Fri Aug 01 20:41:45 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+    Test Case: NAF-62, NAF-63
+    As a registered user I can view and update my profile settings
+    Scenario: Change Password
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Click on ""Change Password"" button
+    6. Enter new password
+    7. Enter confirm password
+    8. Click on ""Save"" button
+    9. Verify password is changed
+    ","6004","test_NAF_3_4_0_change_password","tests.ios","Fri Aug 01 21:27:28 CST 2025","passed","Fri Aug 01 21:27:34 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+    Test Case: NAF-433
+    As a user, I want to be able to log out from the app
+    Scenario: Logout
+    
+    Steps:
+    1. Open the app
+    2. Go to ""My Profile"" button
+    3. Click on ""Log out"" button
+    4. Verify successful logout
+    
+    Expected Result: User should be successfully logged out and redirected to the welcome page
+    ","6269","test_logout_returns_to_welcome_page","tests.ios","Fri Aug 01 21:34:20 CST 2025","passed","Fri Aug 01 21:34:27 CST 2025","TestLogout","test_2_Authentication_logout","",""
+"
+Test that an admin user can upload a new video to the platform with unpublished status.
 
 Test Steps:
 1. Launch the browser
 2. Login as admin user
 3. Navigate to Video section
 4. Upload a new video with random title
-5. Delete the video using 3 dots menu
-6. Verify video is successfully deleted
-","34456","test_NAF_8_10_0_Delete_Video","tests","Fri Aug 01 01:10:07 CST 2025","passed","Fri Aug 01 01:10:42 CST 2025","","test_8_CMS_Video_Management","",""
+5. Verify video is uploaded with unpublished status
+6. Verify video appears in the videos list
+","12710","test_NAF_8_7_0_Upload_Video_With_Unpublished_Status","tests","Fri Aug 01 20:55:19 CST 2025","passed","Fri Aug 01 20:55:31 CST 2025","","test_8_CMS_Video_Management","",""
+"
+    Test Case: NAF-73 - NAF 81, random stage change
+    As a registered user I can edit my current stage
+    Scenario: Change Stage
+    
+    Steps:
+    1. Open the app, assume the user is logged in   
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Click on ""Stage"" button
+    5. Click on ""Change"" button
+    6. Verify stage is changed
+    ","52072","test_NAF_3_7_0_change_stage","tests.android","Fri Aug 01 20:41:51 CST 2025","passed","Fri Aug 01 20:42:43 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+    Test Case: NAF-133
+    As a user I should be able to make progress in the program by completing each step of it
+    Scenario: Mark step as complete
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to the Programs tab
+    3. Click on a program card
+    4. If not enrolled, enroll first
+    5. Click Day 1 video
+    6. Click 'Mark as complete' button
+    7. Verify 'Day 1 complete!' popup is displayed
+    8. Click 'Back Home' button
+    9. Verify progress is not 0%
+    ","0","test_NAF_4_10_0_mark_step_as_complete","tests.ios","Fri Aug 01 21:30:26 CST 2025","passed","Fri Aug 01 21:30:26 CST 2025","TestProgramManagement","test_4_Program_Management","",""
+"
+    Test Case: NAF-42
+    As a registered user I can add my kids info in my profile page
+    Scenario: Add Kids
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Add a child"" button
+    4. Enter child's name
+    5. Enter child's age
+    6. Click on ""Save"" button
+    7. Verify child's info is added
+    ","6012","test_NAF_3_5_0_add_kids","tests.ios","Fri Aug 01 21:27:59 CST 2025","passed","Fri Aug 01 21:28:05 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+Test that an admin user can navigate to the program section of the app through the side menu.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Programs section via side menu
+4. Verify successful navigation to programs section
+","4855","test_NAF_9_1_0_Navigate_To_Programs_Section","tests","Fri Aug 01 20:57:05 CST 2025","passed","Fri Aug 01 20:57:09 CST 2025","","test_9_Programs_Management","",""
+"
+    Test Case: NAF-60
+    As a registered user I can view and update my profile settings
+    Scenario: Modify Mobile
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Enter mobile number
+    5. Click on ""Save"" button   
+    ","5006","test_NAF_3_4_0_modify_mobile","tests.ios","Fri Aug 01 21:27:13 CST 2025","passed","Fri Aug 01 21:27:18 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+Test Case 203: Verify that there is at least one unread notification.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Check for unread notifications
+5. If no unread notifications, switch to Read tab
+6. Verify notification columns are visible
+7. Verify all required columns are present
+","11325","test_CMS_203_Verify_Unread_Notifications_Exist","tests","Fri Aug 01 21:01:02 CST 2025","passed","Fri Aug 01 21:01:14 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test Case 205: Verify that marking multiple notifications as read works correctly.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Mark multiple notifications as read (up to 3)
+5. Verify each notification is marked as read
+","5475","test_CMS_205_Mark_Multiple_Notifications_As_Read","tests","Fri Aug 01 21:01:28 CST 2025","passed","Fri Aug 01 21:01:33 CST 2025","","test_11_CMS_Notifications","",""
+"
+Test that an admin user can view all programs list.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Programs section
+4. Verify programs list is displayed
+5. Verify all programs are accessible
+","5555","test_NAF_920_View_Programs_List","tests","Fri Aug 01 20:57:09 CST 2025","passed","Fri Aug 01 20:57:15 CST 2025","","test_9_Programs_Management","",""
+"
+    Test Case: NAF-19
+    As a user, I want to stay logged in for as long as possible, so that I don't have to log in frequently
+    Scenario: Stay Logged In (Quick Test - 30 seconds)
+    
+    Steps:
+    1. Open the app, user is already logged in
+    2. Close the app, wait for 30 seconds
+    3. Open the app, User is still logged in and is redirected to the Home page
+    ","51395","test_NAF_2_4_0_stay_logged_in_quick","tests.android","Fri Aug 01 20:33:47 CST 2025","passed","Fri Aug 01 20:34:39 CST 2025","TestAuthentication","test_2_Authentication","",""
+"
+    Test Case: NAF-98, NAF-99, NAF-105
+    As a user I can enroll/unenroll any of the programs
+    Scenario: Start a program
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to the Programs tab
+    3. Click on a program card
+    4. If not enrolled, enroll first
+    5. Click 'Start Program' button
+    6. Verify 'Day 1 complete!' popup is displayed
+    7. Click 'Back Home' button
+    ","67870","test_NAF_4_5_0_start_a_program","tests.android","Fri Aug 01 20:44:42 CST 2025","passed","Fri Aug 01 20:45:50 CST 2025","TestProgramManagement","test_4_Program_Management","",""
+"
+    Test Case: NAF-37, NAF-39
+    As a registered user I can view and update my bio
+    Scenario: Update Bio
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Enter bio content
+    5. Click on ""Save"" button
+    6. Verify bio content is updated
+    
+    Expected Result: Bio content is updated
+    ","1001","test_NAF_3_2_0_update_bio","tests.ios","Fri Aug 01 21:26:30 CST 2025","passed","Fri Aug 01 21:26:31 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+    Test Case: NAF-42
+    As a registered user I can add my kids info in my profile page
+    Scenario: Add Kids
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Add a child"" button
+    4. Enter child's name
+    5. Enter child's age
+    6. Click on ""Save"" button
+    7. Verify child's info is added
+    ","33682","test_NAF_3_5_0_add_kids","tests.android","Fri Aug 01 20:40:19 CST 2025","passed","Fri Aug 01 20:40:53 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+Test that a user with admin role has access to the whole list of mobile users, 
+where admins are identified by ""admin"" role.
+
+Test Steps:
+1. Launch the browser
+2. Go to the login page
+3. Enter the admin credentials
+4. Click the login button
+5. Verify that the user is logged in
+6. Edit user role
+7. Verify that the user role is updated
+","10617","test_NAF_7_6_0_Edit_User_Role","tests","Fri Aug 01 20:54:40 CST 2025","passed","Fri Aug 01 20:54:51 CST 2025","","test_7_CMS_Authentication","",""
 "
 Test Case 210: Verify ability to reply to a comment from notification.
 
@@ -68,28 +466,528 @@ Test Steps:
 6. Click on the first notification entry
 7. Reply to the selected comment
 8. Verify reply functionality works correctly
-","18467","test_CMS_210_Reply_To_Comment","tests","Fri Aug 01 01:14:33 CST 2025","passed","Fri Aug 01 01:14:52 CST 2025","","test_11_CMS_Notifications","",""
+","17173","test_CMS_210_Reply_To_Comment","tests","Fri Aug 01 21:02:00 CST 2025","passed","Fri Aug 01 21:02:18 CST 2025","","test_11_CMS_Notifications","",""
 "
-Test that an admin user can upload a new video to the platform with unpublished status.
+Test Case 209: Verify ability to access comment from notification.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Check for unread notifications
+5. If no unread notifications, switch to Read tab
+6. Click on the first notification entry
+7. Verify user is redirected to Comments view
+8. Verify comment view access is successful
+","3946","test_CMS_209_Access_Comment_From_Notification","tests","Fri Aug 01 21:01:56 CST 2025","passed","Fri Aug 01 21:02:00 CST 2025","","test_11_CMS_Notifications","",""
+"
+    Test Case: NAF-40
+    As a registered user I can view and update profile image
+    Scenario: Edit Profile Picture
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Click on ""Take a picture"" button (might not stable on simulator)
+    5. Select a photo from the device
+    
+    Note: This test is skipped because camera functionality is not supported in the current simulator
+    ","0","test_NAF_3_3_0_edit_profile_picture","tests.android","Fri Aug 01 20:36:28 CST 2025","skipped","Fri Aug 01 20:36:28 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+    Test Case: NAF-272
+    As a user, I want to interact with post: ""Like"" post, leave comments
+    Scenario: Verify adding a comment to a post
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Find a post with comments
+    4. Click on comment button
+    5. Add a new comment
+    6. Verify comment is added successfully
+    
+    Expected Result: User should be able to add comments to posts
+    ","21722","test_NAF_14_4_0_verify_adding_comment_to_post","tests.android","Fri Aug 01 21:13:43 CST 2025","passed","Fri Aug 01 21:14:05 CST 2025","TestCommunityManagement","test_14_Community","",""
+"
+    Test Case: NAF-91
+    As a user during onboarding, I should be able to start one of the recommended programs right from the onboarding
+    Scenario: Valid program selection and start
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Click on first recommended program
+    3. Verify 'Start Program' button is displayed
+    4. Click on 'Start Program' button
+    5. Finish first day of the program
+    ","11693","test_NAF_4_2_0_valid_program_selection_and_start","tests.ios","Fri Aug 01 21:29:25 CST 2025","passed","Fri Aug 01 21:29:36 CST 2025","TestProgramManagement","test_4_Program_Management","",""
+"
+Test that an admin user can view all videos uploaded to the CMS platform.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Video section
+4. Verify all video columns are displayed correctly
+5. Verify videos list is accessible
+","7431","test_NAF_8_2_0_View_All_Videos_Uploaded","tests","Fri Aug 01 20:54:56 CST 2025","passed","Fri Aug 01 20:55:03 CST 2025","","test_8_CMS_Video_Management","",""
+"
+    Test Case: NAF-20
+    As a user, I want to log out and log back in
+    Scenario: Logout and Relogin
+    
+    Steps:
+    1. Open the app
+    2. Go to ""My Profile"" button
+    3. Click on ""Log out"" button
+    4. Verify successful logout
+    5. Click on ""Log in"" button
+    6. Verify successful login
+    ","0","test_NAF_2_5_0_logout_and_relogin","tests.ios","Fri Aug 01 21:26:17 CST 2025","passed","Fri Aug 01 21:26:17 CST 2025","TestAuthentication","test_2_Authentication","",""
+"
+Test Case 211: Verify ability to reply to program step thread from notification.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Check for unread notifications
+5. If no unread notifications, switch to Read tab
+6. Click on the first notification entry
+7. Reply to the program step thread
+8. Verify reply functionality works correctly
+","17752","test_CMS_211_Reply_To_Program_Step_Thread","tests","Fri Aug 01 21:02:18 CST 2025","passed","Fri Aug 01 21:02:35 CST 2025","","test_11_CMS_Notifications","",""
+"
+    Test Case: NAF-268
+    As a user I want to create text or text + image posts to share with the community
+    Scenario: Verify post fields after sending
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Click ""NEW POST"" button
+    4. Verify post input field is present and editable
+    5. Enter text content
+    6. Click ""Post"" button
+    7. Verify post fields are cleared after sending
+    
+    Expected Result: Post input field should be present, editable, and cleared after posting
+    ","32551","test_NAF_14_2_0_verify_post_fields_after_sending","tests.android","Fri Aug 01 21:11:49 CST 2025","failed","Fri Aug 01 21:12:22 CST 2025","TestCommunityManagement","test_14_Community","",""
+"
+    Test Case: NAF-14
+    As a user, I want to log in with my email and password
+    Scenario: Login Unsuccessful due to Incorrect Password
+    
+    Steps:
+    1. Open the app
+    2. Click on ""Log in"" button
+    3. Click on ""Sign in with your email"" button
+    4. Enter valid email: qingqin@topflightapps.com
+    5. Enter incorrect password: Aa1234567
+    6. Click ""Log in"" button
+    7. Verify error message appears
+    
+    Expected Result: Error message ""The password you entered is incorrect"" should be displayed
+    ","36952","test_NAF_2_2_0_login_with_wrong_password","tests.ios","Fri Aug 01 21:23:40 CST 2025","passed","Fri Aug 01 21:24:17 CST 2025","TestAuthentication","test_2_Authentication","",""
+"
+Test that an admin can delete and edit own posts, replies and posts/replies created by others.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Postpartum community page
+4. Create a new post with image
+5. Publish the post and verify creation
+6. Edit the post with new content
+7. Add a comment to the post
+8. Delete the comment
+9. Delete the post
+","40419","test_12_4_0_delete_edit_own_and_others_post","tests","Fri Aug 01 21:04:46 CST 2025","passed","Fri Aug 01 21:05:26 CST 2025","","test_12_CMS_Communities","",""
+"
+    Test Case: NAF-73 - NAF 81, random stage change
+    As a registered user I can edit my current stage
+    Scenario: Change Stage
+    
+    Steps:
+    1. Open the app, assume the user is logged in   
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Click on ""Stage"" button
+    5. Click on ""Change"" button
+    6. Verify stage is changed
+    ","10007","test_NAF_3_7_0_change_stage","tests.ios","Fri Aug 01 21:28:25 CST 2025","passed","Fri Aug 01 21:28:35 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+Test that an admin user can navigate to the Video section of the CMS platform through the sidebar menu.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Video section via sidebar menu
+4. Verify successful navigation to video section
+","4725","test_NAF_8_1_0_Navigate_To_Video_Section","tests","Fri Aug 01 20:54:51 CST 2025","passed","Fri Aug 01 20:54:56 CST 2025","","test_8_CMS_Video_Management","",""
+"
+Test that an admin user can publish a video and verify it remains published after logout/login.
 
 Test Steps:
 1. Launch the browser
 2. Login as admin user
 3. Navigate to Video section
 4. Upload a new video with random title
-5. Verify video is uploaded with unpublished status
-6. Verify video appears in the videos list
-","24319","test_NAF_8_7_0_Upload_Video_With_Unpublished_Status","tests","Fri Aug 01 01:08:53 CST 2025","passed","Fri Aug 01 01:09:17 CST 2025","","test_8_CMS_Video_Management","",""
+5. Publish the video
+6. Logout and login again
+7. Verify video is still published
+","16641","test_NAF_8_9_0_Publish_Video","tests","Fri Aug 01 20:55:58 CST 2025","passed","Fri Aug 01 20:56:15 CST 2025","","test_8_CMS_Video_Management","",""
 "
-Test Case 205: Verify that marking multiple notifications as read works correctly.
+Test that an admin can view all communities from the CMS.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Postpartum community page
+4. Verify visibility of all community groups
+5. Check each community individually (Pregnant, Trying to Conceive, Postpartum)
+","13932","test_12_1_0_View_All_Communities","tests","Fri Aug 01 21:03:45 CST 2025","passed","Fri Aug 01 21:03:59 CST 2025","","test_12_CMS_Communities","",""
+"
+    Test Case: NAF-63
+    As a registered user I can view and update my profile settings
+    Scenario: Change Password, Fail with Old Password and Success with New Password
+    
+    Steps:
+    1. Open the app, the user is logged in
+    2. Log out
+    3. Login with old password, should fail
+    4. Login with new password, should success
+    5. reset the password with default old one
+    ","5006","test_NAF_3_4_0_change_password_wrong_old_password","tests.ios","Fri Aug 01 21:27:44 CST 2025","passed","Fri Aug 01 21:27:49 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+Test that an admin can make posts in the communities and posts should be shown to end users in ""All"" and ""Admin"" tabs.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Community page
+4. Create a post with image and publish it
+5. Verify the post is created and displayed
+6. Create another post and save as draft
+","46980","test_12_2_0_Create_Post_In_Community","tests","Fri Aug 01 21:03:59 CST 2025","passed","Fri Aug 01 21:04:46 CST 2025","","test_12_CMS_Communities","",""
+"
+    Test Case: NAF-19
+    As a user, I want to stay logged in for as long as possible, so that I don't have to log in frequently
+    Scenario: Stay Logged In (Quick Test - 30 seconds)
+    
+    Steps:
+    1. Open the app, user is already logged in
+    2. Close the app, wait for 30 seconds
+    3. Open the app, User is still logged in and is redirected to the Home page
+    ","37787","test_NAF_2_4_0_stay_logged_in_quick","tests.ios","Fri Aug 01 21:25:31 CST 2025","passed","Fri Aug 01 21:26:09 CST 2025","TestAuthentication","test_2_Authentication","",""
+"
+    Test Case: NAF-432
+    As a user I want to create text or text + image posts to share with the community
+    Scenario: Verify edit post after sending
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Find first post with three dots (more options)
+    4. Click three dots and check for Edit option
+    5. If Edit option exists, click Edit
+    6. Update post text to ""Test edit post""
+    7. Click Post button
+    8. Verify updated post is visible in feed
+    
+    Expected Result: Post should be editable if edit functionality is implemented
+    ","0","test_NAF_14_2_0_verify_edit_post_after_sending","tests.ios","Fri Aug 01 21:31:08 CST 2025","passed","Fri Aug 01 21:31:08 CST 2025","TestCommunityManagement","test_14_Community","",""
+"
+Test Case 213: Verify ability to delete notification from 3 dots menu.
 
 Test Steps:
 1. Launch the browser
 2. Login as admin user
 3. Navigate to Notifications page
-4. Mark multiple notifications as read (up to 3)
-5. Verify each notification is marked as read
-","7955","test_CMS_205_Mark_Multiple_Notifications_As_Read","tests","Fri Aug 01 01:13:51 CST 2025","passed","Fri Aug 01 01:13:59 CST 2025","","test_11_CMS_Notifications","",""
+4. Check for unread notifications
+5. If no unread notifications, switch to Read tab
+6. Delete notification from 3 dots menu
+7. Verify notification is deleted successfully
+","10827","test_CMS_213_Delete_From_Three_Dots_Menu","tests","Fri Aug 01 21:02:42 CST 2025","passed","Fri Aug 01 21:02:53 CST 2025","","test_11_CMS_Notifications","",""
+"
+    Test Case: NAF-433
+    As a user, I want to be able to log out from the app
+    Scenario: Logout
+    
+    Steps:
+    1. Open the app
+    2. Go to ""My Profile"" button
+    3. Click on ""Log out"" button
+    4. Verify successful logout
+    
+    Expected Result: User should be successfully logged out and redirected to the welcome page
+    ","30513","test_logout_returns_to_welcome_page","tests.android","Fri Aug 01 21:16:44 CST 2025","passed","Fri Aug 01 21:17:15 CST 2025","TestLogout","test_2_Authentication_logout","",""
+"
+    Test Case: NAF-266
+    As a user I want to create text or text + image posts to share with the community
+    Scenario: Verify creating a text-only post
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Click ""NEW POST"" button
+    4. Enter text content
+    5. Click ""Post"" button
+    6. Verify post is created successfully
+    
+    Expected Result: Text-only post should be created and visible in the community feed
+    ","30455","test_NAF_14_2_0_create_text_only_post","tests.android","Fri Aug 01 21:10:59 CST 2025","failed","Fri Aug 01 21:11:29 CST 2025","TestCommunityManagement","test_14_Community","",""
+"
+    Test Case: NAF-60
+    As a registered user I can view and update my profile settings
+    Scenario: Modify Mobile
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Enter mobile number
+    5. Click on ""Save"" button   
+    ","41245","test_NAF_3_4_0_modify_mobile","tests.android","Fri Aug 01 20:37:11 CST 2025","passed","Fri Aug 01 20:37:52 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+    Test Case: NAF-63
+    As a registered user I can view and update my profile settings
+    Scenario: Change Password, Fail with Old Password and Success with New Password
+    
+    Steps:
+    1. Open the app, the user is logged in
+    2. Log out
+    3. Login with old password, should fail
+    4. Login with new password, should success
+    5. reset the password with default old one
+    ","99979","test_NAF_3_4_0_change_password_wrong_old_password","tests.android","Fri Aug 01 20:38:33 CST 2025","passed","Fri Aug 01 20:40:13 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+Test that an admin user can create and edit programs.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Programs section
+4. Create a new program with random title
+5. Wait for page to load after program creation
+6. Edit the created program
+7. Verify changes are saved successfully
+","43426","test_NAF_980_Edit_Program","tests","Fri Aug 01 20:59:56 CST 2025","passed","Fri Aug 01 21:00:39 CST 2025","","test_9_Programs_Management","",""
+"
+    Test Case: NAF-432
+    As a user I want to create text or text + image posts to share with the community
+    Scenario: Verify edit post after sending
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Find first post with three dots (more options)
+    4. Click three dots and check for Edit option
+    5. If Edit option exists, click Edit
+    6. Update post text to ""Test edit post""
+    7. Click Post button
+    8. Verify updated post is visible in feed
+    
+    Expected Result: Post should be editable if edit functionality is implemented
+    ","0","test_NAF_14_2_0_verify_edit_post_after_sending","tests.android","Fri Aug 01 21:12:42 CST 2025","passed","Fri Aug 01 21:12:42 CST 2025","TestCommunityManagement","test_14_Community","",""
+"
+    Test Case: NAF-110
+    As a user I should be able to check programs details
+    Scenario: Comment under enrolled program
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to the Programs tab
+    3. Click on a program card
+    4. If not enrolled, enroll first
+    5. Click Day 1 video
+    6. Click comments entry
+    7. Click write a comment
+    8. Enter comment and send
+    9. Verify comment is posted
+    ","102194","test_NAF_4_8_0_comment_under_enrolled_program","tests.android","Fri Aug 01 20:45:53 CST 2025","passed","Fri Aug 01 20:47:35 CST 2025","TestProgramManagement","test_4_Program_Management","",""
+"
+    Test Case: NAF-433
+    As a user, I want to be able to log out from the app
+    Scenario: Logout and Relogin
+    
+    Steps:
+    1. Open the app
+    2. Go to ""My Profile"" button
+    3. Click on ""Log out"" button
+    4. Verify successful logout
+    5. Click on ""Log in"" button
+    6. Verify successful login
+    
+    Expected Result: User should be successfully logged in and redirected to the main app
+    ","65856","test_logout_and_relogin","tests.android","Fri Aug 01 21:15:34 CST 2025","passed","Fri Aug 01 21:16:40 CST 2025","TestLogout","test_2_Authentication_logout","",""
+"
+    Test Case: NAF-62, NAF-63
+    As a registered user I can view and update my profile settings
+    Scenario: Change Password
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Click on ""Change Password"" button
+    6. Enter new password
+    7. Enter confirm password
+    8. Click on ""Save"" button
+    9. Verify password is changed
+    ","29135","test_NAF_3_4_0_change_password","tests.android","Fri Aug 01 20:37:58 CST 2025","passed","Fri Aug 01 20:38:27 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+    Test Case: NAF-55
+    As a registered user I can view and update my profile settings
+    Scenario: Modify Name
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Enter name
+    5. Click on ""Save"" button
+    ","3006","test_NAF_3_4_0_modify_name","tests.ios","Fri Aug 01 21:27:00 CST 2025","passed","Fri Aug 01 21:27:03 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+Test that an admin user can search program by program's title.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Programs section
+4. Create a new program with random title
+5. Search for the created program by title
+6. Verify search results display the correct program
+","29298","test_NAF_930_Search_Program","tests","Fri Aug 01 20:57:15 CST 2025","passed","Fri Aug 01 20:57:44 CST 2025","","test_9_Programs_Management","",""
+"
+    Test Case: NAF-16
+    As a user I want to reset my password if I forget it
+    Scenario: Successful Password Reset Request
+    
+    Steps:
+    1. Open the app, Go to the Login page
+    2. Click the 'forgot password?' link
+    3. Enter a valid registered email
+    4. Click 'Submit' button
+    ","18503","test_NAF_2_3_0_successful_password_reset_request","tests.ios","Fri Aug 01 21:24:25 CST 2025","passed","Fri Aug 01 21:24:43 CST 2025","TestAuthentication","test_2_Authentication","",""
+"
+Test that an admin user can select a video and update its details.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Video section
+4. Upload a new video with random title
+5. Select the uploaded video
+6. Update video details
+7. Verify changes are saved successfully
+","26460","test_NAF_8_8_0_Update_Video_Details","tests","Fri Aug 01 20:55:31 CST 2025","passed","Fri Aug 01 20:55:58 CST 2025","","test_8_CMS_Video_Management","",""
+"
+    Test Case: NAF-265
+    As a user, I want to join a community based on my selected stage during onboarding.
+    Scenario: Verify community feed navigation
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Verify community feed is displayed
+    4. Verify community feed navigation is working
+    ","4719","test_NAF_14_1_0_verify_community_feed_navigation","tests.android","Fri Aug 01 21:10:35 CST 2025","passed","Fri Aug 01 21:10:40 CST 2025","TestCommunityManagement","test_14_Community","",""
+"
+Test that an admin user can search videos by video title.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Video section
+4. Upload a new video with random title
+5. Search for the uploaded video by title
+6. Verify search results display the correct video
+","15623","test_NAF_8_3_0_Search_Videos","tests","Fri Aug 01 20:55:03 CST 2025","passed","Fri Aug 01 20:55:19 CST 2025","","test_8_CMS_Video_Management","",""
+"
+Test Case 212: Verify ability to close comments view.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Check for unread notifications
+5. If no unread notifications, switch to Read tab
+6. Click on the first notification entry
+7. Close the comments view using Escape key
+8. Verify comments view is closed successfully
+","6929","test_CMS_212_Close_Comments_View","tests","Fri Aug 01 21:02:35 CST 2025","passed","Fri Aug 01 21:02:42 CST 2025","","test_11_CMS_Notifications","",""
+"
+    Test Case: NAF-133
+    As a user I should be able to make progress in the program by completing each step of it
+    Scenario: Mark step as complete
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to the Programs tab
+    3. Click on a program card
+    4. If not enrolled, enroll first
+    5. Click Day 1 video
+    6. Click 'Mark as complete' button
+    7. Verify 'Day 1 complete!' popup is displayed
+    8. Click 'Back Home' button
+    9. Verify progress is not 0%
+    ","65864","test_NAF_4_10_0_mark_step_as_complete","tests.android","Fri Aug 01 20:47:38 CST 2025","passed","Fri Aug 01 20:48:44 CST 2025","TestProgramManagement","test_4_Program_Management","",""
+"
+    Test Case: NAF-269
+    As a user I want to create text or text + image posts to share with the community
+    Scenario: Verify viewing comments on a post
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Click on a comment button for any post
+    4. Verify comment section opens
+    5. Add a comment
+    6. Verify comment is posted successfully
+    
+    Expected Result: User should be able to view and add comments to posts
+    ","24010","test_NAF_14_2_0_verify_viewing_comments_on_post","tests.android","Fri Aug 01 21:12:59 CST 2025","passed","Fri Aug 01 21:13:23 CST 2025","TestCommunityManagement","test_14_Community","",""
+"
+    Test Case: NAF-271
+    As a user, I want to interact with post: ""Like"" post, leave comments
+    Scenario: Verify liking a post
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Find the first like button
+    4. Record current like count
+    5. Click like button
+    6. Verify like count changes as expected
+    
+    Expected Result: User should be able to like posts and see like count change
+    ","1006","test_NAF_14_4_0_verify_liking_post","tests.ios","Fri Aug 01 21:31:39 CST 2025","passed","Fri Aug 01 21:31:40 CST 2025","TestCommunityManagement","test_14_Community","",""
+"
+    Test Case: NAF-47
+    As a registered user I can add my kids info in my profile page
+    Scenario: Delete Kids
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Add a child"" button
+    4. Enter child's name
+    5. Enter child's age
+    6. Click on ""Save"" button
+    7. Verify child's info is added
+    8. Click on ""Edit"" button
+    9. Click on ""Delete"" button
+    10. Verify child's info is deleted
+    ","0","test_NAF_3_5_0_delete_kids","tests.ios","Fri Aug 01 21:28:15 CST 2025","passed","Fri Aug 01 21:28:15 CST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+Test Case 199: Verify the notifications page loads correctly.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Notifications page
+4. Verify tabs are displayed correctly
+5. Verify table headers are present
+6. Verify notification rows are loaded
+","10284","test_CMS_199_Verify_Notifications_Page","tests","Fri Aug 01 21:00:39 CST 2025","passed","Fri Aug 01 21:00:49 CST 2025","","test_11_CMS_Notifications","",""
 "
 Test Case 214: Verify ability to delete comment from comment/question thread.
 
@@ -102,18 +1000,202 @@ Test Steps:
 6. Open the first comment thread
 7. Delete comment in thread
 8. Verify comment is deleted successfully
-","29368","test_CMS_214_Delete_From_Comment_Thread","tests","Fri Aug 01 01:16:34 CST 2025","failed","Fri Aug 01 01:17:03 CST 2025","","test_11_CMS_Notifications","",""
+","22102","test_CMS_214_Delete_From_Comment_Thread","tests","Fri Aug 01 21:03:23 CST 2025","passed","Fri Aug 01 21:03:45 CST 2025","","test_11_CMS_Notifications","",""
 "
-Test Case 199: Verify the notifications page loads correctly.
+    Test Case: NAF-16
+    As a user I want to reset my password if I forget it
+    Scenario: Successful Password Reset Request
+    
+    Steps:
+    1. Open the app, Go to the Login page
+    2. Click the 'forgot password?' link
+    3. Enter a valid registered email
+    4. Click 'Submit' button
+    ","15662","test_NAF_2_3_0_successful_password_reset_request","tests.android","Fri Aug 01 20:32:45 CST 2025","passed","Fri Aug 01 20:33:01 CST 2025","TestAuthentication","test_2_Authentication","",""
+"
+Test that an admin user can pin and unpin selected posts.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Postpartum community page
+4. Create a new post with image
+5. Publish the post and verify creation
+6. Pin the post
+7. Unpin the post
+8. Verify pin/unpin functionality works correctly
+","44733","test_12_6_0_pin_unpin_community_post","tests","Fri Aug 01 21:05:26 CST 2025","passed","Fri Aug 01 21:06:11 CST 2025","","test_12_CMS_Communities","",""
+"
+    Test Case: NAF-110
+    As a user I should be able to check programs details
+    Scenario: Comment under enrolled program
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to the Programs tab
+    3. Click on a program card
+    4. If not enrolled, enroll first
+    5. Click Day 1 video
+    6. Click comments entry
+    7. Click write a comment
+    8. Enter comment and send
+    9. Verify comment is posted
+    ","321","test_NAF_4_8_0_comment_under_enrolled_program","tests.ios","Fri Aug 01 21:30:18 CST 2025","passed","Fri Aug 01 21:30:19 CST 2025","TestProgramManagement","test_4_Program_Management","",""
+"
+    Test Case: NAF-15
+    As a user, I want to log in with my email and password
+    Scenario: Login Unsuccessful due to Non-existent Email
+    
+    Steps:
+    1. Open the app
+    2. Click on ""Log in"" button
+    3. Click on ""Sign in with your email"" button
+    4. Enter non-existent email: test@example.com
+    5. Enter password: testpassword
+    6. Click ""Log in"" button    
+    7. Verify error message appears
+    
+    Expected Result: Error message ""There is no account associated with this email. Please sign up."" should be displayed
+    ","23232","test_NAF_2_2_0_login_with_wrong_email","tests.android","Fri Aug 01 20:31:31 CST 2025","passed","Fri Aug 01 20:31:55 CST 2025","TestAuthentication","test_2_Authentication","",""
+"
+    Test Case: NAF-12
+    As a user, I want to log in with my email and password
+    Scenario: Successful Login
+    
+    Steps:
+    1. Open the app
+    2. Click on ""Log in"" button
+    3. Click on ""Sign in with your email"" button
+    4. Enter valid email and password
+    5. Click ""Log in"" button
+    6. Verify successful login
+    
+    Expected Result: User should be successfully logged in and redirected to the main app
+    ","32155","test_NAF_2_2_0_successful_login","tests.ios","Fri Aug 01 21:24:51 CST 2025","passed","Fri Aug 01 21:25:23 CST 2025","TestAuthentication","test_2_Authentication","",""
+"
+    Test Case: NAF-93, NAF-96, NAF-97
+    As a user on the home page I should be able to see the list of recommended programs
+    Scenario: View list of recommended programs
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to the Programs tab
+    3. Verify the list of recommended programs is displayed
+    4. Click on a program card
+    5. Verify program detail page is displayed
+    6. Verify program card information is displayed
+    7. Verify program detail page is displayed
+    ","16768","test_NAF_4_3_0_view_recommended_programs","tests.android","Fri Aug 01 20:44:22 CST 2025","passed","Fri Aug 01 20:44:39 CST 2025","TestProgramManagement","test_4_Program_Management","",""
+"
+    Test Case: NAF-93, NAF-96, NAF-97
+    As a user on the home page I should be able to see the list of recommended programs
+    Scenario: View list of recommended programs
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to the Programs tab
+    3. Verify the list of recommended programs is displayed
+    4. Click on a program card
+    5. Verify program detail page is displayed
+    6. Verify program card information is displayed
+    7. Verify program detail page is displayed
+    ","10899","test_NAF_4_3_0_view_recommended_programs","tests.ios","Fri Aug 01 21:29:43 CST 2025","passed","Fri Aug 01 21:29:54 CST 2025","TestProgramManagement","test_4_Program_Management","",""
+"
+Test Case 201: Verify the ""Mark as read"" button functionality.
 
 Test Steps:
 1. Launch the browser
 2. Login as admin user
 3. Navigate to Notifications page
-4. Verify tabs are displayed correctly
-5. Verify table headers are present
-6. Verify notification rows are loaded
-","6889","test_CMS_199_Verify_Notifications_Page","tests","Fri Aug 01 01:12:52 CST 2025","passed","Fri Aug 01 01:12:59 CST 2025","","test_11_CMS_Notifications","",""
+4. Mark the first notification as read
+5. Verify notification status changes
+","7866","test_CMS_201_Mark_First_Notification_As_Read","tests","Fri Aug 01 21:00:49 CST 2025","passed","Fri Aug 01 21:00:57 CST 2025","","test_11_CMS_Notifications","",""
+"
+    Test Case: NAF-269
+    As a user I want to create text or text + image posts to share with the community
+    Scenario: Verify viewing comments on a post
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Click on a comment button for any post
+    4. Verify comment section opens
+    5. Add a comment
+    6. Verify comment is posted successfully
+    
+    Expected Result: User should be able to view and add comments to posts
+    ","1004","test_NAF_14_2_0_verify_viewing_comments_on_post","tests.ios","Fri Aug 01 21:31:18 CST 2025","passed","Fri Aug 01 21:31:19 CST 2025","TestCommunityManagement","test_14_Community","",""
+"
+Test that an admin user can delete a video using the 3 dots menu.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Video section
+4. Upload a new video with random title
+5. Delete the video using 3 dots menu
+6. Verify video is successfully deleted
+","23512","test_NAF_8_10_0_Delete_Video","tests","Fri Aug 01 20:56:15 CST 2025","passed","Fri Aug 01 20:56:38 CST 2025","","test_8_CMS_Video_Management","",""
+"
+    Test Case: NAF-12
+    As a user, I want to log in with my email and password
+    Scenario: Successful Login
+    
+    Steps:
+    1. Open the app
+    2. Click on ""Log in"" button
+    3. Click on ""Sign in with your email"" button
+    4. Enter valid email and password
+    5. Click ""Log in"" button
+    6. Verify successful login
+    
+    Expected Result: User should be successfully logged in and redirected to the main app
+    ","24817","test_NAF_2_2_0_successful_login","tests.android","Fri Aug 01 20:33:11 CST 2025","passed","Fri Aug 01 20:33:36 CST 2025","TestAuthentication","test_2_Authentication","",""
+"
+    Test Case: NAF-98, NAF-99, NAF-105
+    As a user I can enroll/unenroll any of the programs
+    Scenario: Start a program
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to the Programs tab
+    3. Click on a program card
+    4. If not enrolled, enroll first
+    5. Click 'Start Program' button
+    6. Verify 'Day 1 complete!' popup is displayed
+    7. Click 'Back Home' button
+    ","10296","test_NAF_4_5_0_start_a_program","tests.ios","Fri Aug 01 21:30:01 CST 2025","passed","Fri Aug 01 21:30:11 CST 2025","TestProgramManagement","test_4_Program_Management","",""
+"
+    Test Case: NAF-265
+    As a user, I want to join a community based on my selected stage during onboarding.
+    Scenario: Verify community feed navigation
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Verify community feed is displayed
+    4. Verify community feed navigation is working
+    ","0","test_NAF_14_1_0_verify_community_feed_navigation","tests.ios","Fri Aug 01 21:30:39 CST 2025","passed","Fri Aug 01 21:30:39 CST 2025","TestCommunityManagement","test_14_Community","",""
+"
+Test that an admin user can upload a video thumbnail.
+
+Test Steps:
+1. Launch the browser
+2. Login as admin user
+3. Navigate to Video section
+4. Upload a new video with random title
+5. Upload/Change thumbnail for the video
+6. Verify thumbnail is successfully uploaded
+","26544","test_NAF_8_12_0_Upload_Thumbnail","tests","Fri Aug 01 20:56:38 CST 2025","passed","Fri Aug 01 20:57:05 CST 2025","","test_8_CMS_Video_Management","",""
+"
+    Test Case: NAF-20
+    As a user, I want to log out and log back in
+    Scenario: Logout and Relogin
+    
+    Steps:
+    1. Open the app
+    2. Go to ""My Profile"" button
+    3. Click on ""Log out"" button
+    4. Verify successful logout
+    5. Click on ""Log in"" button
+    6. Verify successful login
+    ","54963","test_NAF_2_5_0_logout_and_relogin","tests.android","Fri Aug 01 20:34:49 CST 2025","passed","Fri Aug 01 20:35:44 CST 2025","TestAuthentication","test_2_Authentication","",""
 "
 Test that a user with admin role can access the profile page and edit profile information.
 
@@ -129,278 +1211,4 @@ Test Steps:
 9. Enter the new profile information
 10. Click the save button
 11. Verify that the profile information is updated
-","31130","test_NAF_7_4_0_Edit_Profile","tests","Fri Aug 01 01:06:44 CST 2025","passed","Fri Aug 01 01:07:15 CST 2025","","test_7_CMS_Authentication","",""
-"
-Test that an admin user can view all programs list.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Programs section
-4. Verify programs list is displayed
-5. Verify all programs are accessible
-","6465","test_NAF_920_View_Programs_List","tests","Fri Aug 01 01:11:18 CST 2025","passed","Fri Aug 01 01:11:25 CST 2025","","test_9_Programs_Management","",""
-"
-Test that an admin user can search program by program's title.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Programs section
-4. Create a new program with random title
-5. Search for the created program by title
-6. Verify search results display the correct program
-","30191","test_NAF_930_Search_Program","tests","Fri Aug 01 01:11:25 CST 2025","passed","Fri Aug 01 01:11:55 CST 2025","","test_9_Programs_Management","",""
-"
-Test that an admin user can navigate to the Video section of the CMS platform through the sidebar menu.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Video section via sidebar menu
-4. Verify successful navigation to video section
-","4996","test_NAF_8_1_0_Navigate_To_Video_Section","tests","Fri Aug 01 01:07:51 CST 2025","passed","Fri Aug 01 01:07:56 CST 2025","","test_8_CMS_Video_Management","",""
-"
-Test that an admin can make posts in the communities and posts should be shown to end users in ""All"" and ""Admin"" tabs.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Community page
-4. Create a post with image and publish it
-5. Verify the post is created and displayed
-6. Create another post and save as draft
-","54351","test_12_2_0_Create_Post_In_Community","tests","Fri Aug 01 01:17:22 CST 2025","passed","Fri Aug 01 01:18:16 CST 2025","","test_12_CMS_Communities","",""
-"
-Test Case 209: Verify ability to access comment from notification.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Notifications page
-4. Check for unread notifications
-5. If no unread notifications, switch to Read tab
-6. Click on the first notification entry
-7. Verify user is redirected to Comments view
-8. Verify comment view access is successful
-","7931","test_CMS_209_Access_Comment_From_Notification","tests","Fri Aug 01 01:14:25 CST 2025","passed","Fri Aug 01 01:14:33 CST 2025","","test_11_CMS_Notifications","",""
-"
-Test Case 211: Verify ability to reply to program step thread from notification.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Notifications page
-4. Check for unread notifications
-5. If no unread notifications, switch to Read tab
-6. Click on the first notification entry
-7. Reply to the program step thread
-8. Verify reply functionality works correctly
-","20307","test_CMS_211_Reply_To_Program_Step_Thread","tests","Fri Aug 01 01:14:52 CST 2025","passed","Fri Aug 01 01:15:12 CST 2025","","test_11_CMS_Notifications","",""
-"
-Test that an admin can delete and edit own posts, replies and posts/replies created by others.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Postpartum community page
-4. Create a new post with image
-5. Publish the post and verify creation
-6. Edit the post with new content
-7. Add a comment to the post
-8. Delete the comment
-9. Delete the post
-","41263","test_12_4_0_delete_edit_own_and_others_post","tests","Fri Aug 01 01:18:16 CST 2025","passed","Fri Aug 01 01:18:57 CST 2025","","test_12_CMS_Communities","",""
-"
-Test that an admin user can search videos by video title.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Video section
-4. Upload a new video with random title
-5. Search for the uploaded video by title
-6. Verify search results display the correct video
-","28753","test_NAF_8_3_0_Search_Videos","tests","Fri Aug 01 01:08:24 CST 2025","passed","Fri Aug 01 01:08:53 CST 2025","","test_8_CMS_Video_Management","",""
-"
-Test Case 212: Verify ability to close comments view.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Notifications page
-4. Check for unread notifications
-5. If no unread notifications, switch to Read tab
-6. Click on the first notification entry
-7. Close the comments view using Escape key
-8. Verify comments view is closed successfully
-","7825","test_CMS_212_Close_Comments_View","tests","Fri Aug 01 01:15:12 CST 2025","passed","Fri Aug 01 01:15:20 CST 2025","","test_11_CMS_Notifications","",""
-"
-Test that a user with admin role has access to the whole list of mobile users, 
-where admins are identified by ""admin"" role.
-
-Test Steps:
-1. Launch the browser
-2. Go to the login page
-3. Enter the admin credentials
-4. Click the login button
-5. Verify that the user is logged in
-6. Edit user role
-7. Verify that the user role is updated
-","17356","test_NAF_7_6_0_Edit_User_Role","tests","Fri Aug 01 01:07:34 CST 2025","passed","Fri Aug 01 01:07:51 CST 2025","","test_7_CMS_Authentication","",""
-"
-Test that an admin user can create and edit programs.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Programs section
-4. Create a new program with random title
-5. Wait for page to load after program creation
-6. Edit the created program
-7. Verify changes are saved successfully
-","27145","test_NAF_980_Edit_Program","tests","Fri Aug 01 01:12:25 CST 2025","passed","Fri Aug 01 01:12:52 CST 2025","","test_9_Programs_Management","",""
-"
-Test Case 202: Verify the switching between ""Unread"" and ""Read"" tabs.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Notifications page
-4. Switch to Read tab
-5. Switch to Unread tab
-6. Verify tab switching works correctly
-","6654","test_CMS_202_Switch_Between_Tabs","tests","Fri Aug 01 01:13:08 CST 2025","passed","Fri Aug 01 01:13:15 CST 2025","","test_11_CMS_Notifications","",""
-"
-Test Case 207: Verify marking a single notification as read and unread.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Notifications page
-4. Mark a single notification as read
-5. Mark the same notification as unread
-6. Verify status changes correctly
-","9898","test_CMS_207_Mark_Single_Notification_As_Read_Unread","tests","Fri Aug 01 01:13:59 CST 2025","passed","Fri Aug 01 01:14:09 CST 2025","","test_11_CMS_Notifications","",""
-"
-Test that an admin user can pin and unpin selected posts.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Postpartum community page
-4. Create a new post with image
-5. Publish the post and verify creation
-6. Pin the post
-7. Unpin the post
-8. Verify pin/unpin functionality works correctly
-","58490","test_12_6_0_pin_unpin_community_post","tests","Fri Aug 01 01:18:57 CST 2025","passed","Fri Aug 01 01:19:56 CST 2025","","test_12_CMS_Communities","",""
-"
-Test that an admin user can navigate to the program section of the app through the side menu.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Programs section via side menu
-4. Verify successful navigation to programs section
-","5414","test_NAF_9_1_0_Navigate_To_Programs_Section","tests","Fri Aug 01 01:11:13 CST 2025","passed","Fri Aug 01 01:11:18 CST 2025","","test_9_Programs_Management","",""
-"
-Test that an admin user can publish a video and verify it remains published after logout/login.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Video section
-4. Upload a new video with random title
-5. Publish the video
-6. Logout and login again
-7. Verify video is still published
-","25077","test_NAF_8_9_0_Publish_Video","tests","Fri Aug 01 01:09:42 CST 2025","passed","Fri Aug 01 01:10:07 CST 2025","","test_8_CMS_Video_Management","",""
-"
-Test that a user with admin role can successfully log out from the CMS.
-
-Test Steps:
-1. Launch the browser
-2. Go to the login page
-3. Enter the admin credentials
-4. Click the login button
-5. Verify that the user is logged in
-6. Click the logout button
-7. Verify that the user is logged out
-","17110","test_NAF_7_3_0_Logout_of_AdminPanel","tests","Fri Aug 01 01:06:27 CST 2025","passed","Fri Aug 01 01:06:44 CST 2025","","test_7_CMS_Authentication","",""
-"
-Test Case 213: Verify ability to delete notification from 3 dots menu.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Notifications page
-4. Check for unread notifications
-5. If no unread notifications, switch to Read tab
-6. Delete notification from 3 dots menu
-7. Verify notification is deleted successfully
-","11463","test_CMS_213_Delete_From_Three_Dots_Menu","tests","Fri Aug 01 01:15:20 CST 2025","passed","Fri Aug 01 01:15:31 CST 2025","","test_11_CMS_Notifications","",""
-"
-Test that a user with admin role can login to the content management platform 
-using the same credentials as for the mobile app.
-
-Test Steps:
-1. Launch the browser
-2. Go to the login page
-3. Enter the admin credentials
-4. Click the login button
-5. Verify that the user is logged in
-","10932","test_NAF_7_2_0_Login_As_Admin","tests","Fri Aug 01 01:06:16 CST 2025","passed","Fri Aug 01 01:06:27 CST 2025","","test_7_CMS_Authentication","",""
-"
-Test that an admin user can view all videos uploaded to the CMS platform.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Video section
-4. Verify all video columns are displayed correctly
-5. Verify videos list is accessible
-","8089","test_NAF_8_2_0_View_All_Videos_Uploaded","tests","Fri Aug 01 01:07:56 CST 2025","passed","Fri Aug 01 01:08:04 CST 2025","","test_8_CMS_Video_Management","",""
-"
-Test that an admin user can delete program using the 3 dots menu.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Programs section
-4. Create a new program with random title
-5. Delete the program using 3 dots menu
-6. Verify program is successfully deleted
-","29762","test_NAF_960_Delete_Program","tests","Fri Aug 01 01:11:55 CST 2025","passed","Fri Aug 01 01:12:25 CST 2025","","test_9_Programs_Management","",""
-"
-Test Case 201: Verify the ""Mark as read"" button functionality.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Notifications page
-4. Mark the first notification as read
-5. Verify notification status changes
-","9400","test_CMS_201_Mark_First_Notification_As_Read","tests","Fri Aug 01 01:12:59 CST 2025","passed","Fri Aug 01 01:13:08 CST 2025","","test_11_CMS_Notifications","",""
-"
-Test Case 203: Verify that there is at least one unread notification.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Notifications page
-4. Check for unread notifications
-5. If no unread notifications, switch to Read tab
-6. Verify notification columns are visible
-7. Verify all required columns are present
-","11940","test_CMS_203_Verify_Unread_Notifications_Exist","tests","Fri Aug 01 01:13:26 CST 2025","passed","Fri Aug 01 01:13:38 CST 2025","","test_11_CMS_Notifications","",""
-"
-Test that an admin can view all communities from the CMS.
-
-Test Steps:
-1. Launch the browser
-2. Login as admin user
-3. Navigate to Postpartum community page
-4. Verify visibility of all community groups
-5. Check each community individually (Pregnant, Trying to Conceive, Postpartum)
-","18182","test_12_1_0_View_All_Communities","tests","Fri Aug 01 01:17:03 CST 2025","passed","Fri Aug 01 01:17:22 CST 2025","","test_12_CMS_Communities","",""
+","24741","test_NAF_7_4_0_Edit_Profile","tests","Fri Aug 01 20:54:16 CST 2025","passed","Fri Aug 01 20:54:40 CST 2025","","test_7_CMS_Authentication","",""
