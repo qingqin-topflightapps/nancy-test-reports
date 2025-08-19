@@ -1,0 +1,9 @@
+2025-08-19 21:34:49 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:86 - Starting test: test_NAF_16_2_0_verify_app_opens_to_comment_or_post_from_notifications
+2025-08-19 21:34:49 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-08-19 21:34:50 | INFO     | core.driver_manager_android:restart_app:93 - App restarted successfully
+2025-08-19 21:34:50 | INFO     | test_16_Notification:setup_and_teardown:21 - App restarted successfully
+2025-08-19 21:34:52 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:91 - Completed test: test_NAF_16_2_0_verify_app_opens_to_comment_or_post_from_notifications
+2025-08-19 21:34:52 | INFO     | core.driver_manager_android:restart_app:93 - App restarted successfully
+2025-08-19 21:34:52 | INFO     | test_16_Notification:setup_and_teardown:33 - App restarted after test completion
+2025-08-19 21:34:52 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function
+2025-08-19 21:34:52 | INFO     | natal_mobile_auto.conftest:setup_test_session:54 - Test session teardown

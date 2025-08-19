@@ -1,0 +1,12 @@
+2025-08-19 21:35:17 | INFO     | natal_mobile_auto.conftest:setup_test_session:50 - Test session setup completed
+2025-08-19 21:35:17 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:60 - Setting up test function
+2025-08-19 21:35:17 | INFO     | core.driver_manager_android:_create_driver:43 - {'platformName': 'Android', 'platformVersion': '13', 'deviceName': 'emulator-5554', 'appPackage': 'com.natalllc.dev', 'appActivity': 'com.natalllc.dev.MainActivity', 'automationName': 'UiAutomator2', 'noReset': True, 'newCommandTimeout': 300, 'waitForIdleTimeout': 3000, 'uiautomator2ServerInstallTimeout': 60000, 'uiautomator2ServerLaunchTimeout': 60000, 'androidInstallTimeout': 90000, 'adbExecTimeout': 20000, 'autoGrantPermissions': True, 'skipServerInstallation': False, 'ignoreHiddenApiPolicyError': True}
+2025-08-19 21:35:17 | INFO     | core.driver_manager_android:_create_driver:50 - Connecting to Appium server: http://127.0.0.1:4722
+2025-08-19 21:35:20 | INFO     | core.driver_manager_android:_create_driver:55 - WebDriver created successfully
+2025-08-19 21:35:20 | INFO     | core.driver_manager_android:restart_app:93 - App restarted successfully
+2025-08-19 21:35:20 | INFO     | test_17_Challenge:setup_and_teardown:21 - App restarted successfully
+2025-08-19 21:35:22 | INFO     | natal_mobile_auto.conftest:pytest_runtest_teardown:91 - Completed test: test_NAF_17_2_0_verify_challenge_information_display
+2025-08-19 21:35:23 | INFO     | core.driver_manager_android:restart_app:93 - App restarted successfully
+2025-08-19 21:35:23 | INFO     | test_17_Challenge:setup_and_teardown:33 - App restarted after test completion
+2025-08-19 21:35:23 | INFO     | natal_mobile_auto.conftest:setup_and_teardown_test:64 - Tearing down test function
+2025-08-19 21:35:23 | INFO     | natal_mobile_auto.conftest:setup_test_session:54 - Test session teardown

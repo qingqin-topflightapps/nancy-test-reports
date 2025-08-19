@@ -1,0 +1,2 @@
+2025-08-19 21:35:17.849 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:86 - Starting test: test_NAF_17_2_0_verify_challenge_information_display
+2025-08-19 21:35:17.850 | INFO     | natal_mobile_auto.conftest:setup_test_session:41 - Setting up test session

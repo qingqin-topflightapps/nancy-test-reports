@@ -1,0 +1,2 @@
+2025-08-19 21:34:41.392 | INFO     | natal_mobile_auto.conftest:pytest_runtest_setup:86 - Starting test: test_NAF_16_2_0_verify_notifications_page_is_accessible
+2025-08-19 21:34:41.392 | INFO     | natal_mobile_auto.conftest:setup_test_session:41 - Setting up test session
