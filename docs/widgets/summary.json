@@ -1,1 +1,1 @@
-{"reportName":"Auto Test Staging 1.8.1(4)","testRuns":[],"statistic":{"failed":0,"broken":0,"skipped":1,"passed":93,"unknown":0,"total":94},"time":{"start":1756912868534,"stop":1756915231917,"duration":2363383,"minDuration":0,"maxDuration":116700,"sumDuration":1675570}}
+{"reportName":"Auto Test Staging 1.8.4","testRuns":[],"statistic":{"failed":2,"broken":0,"skipped":1,"passed":91,"unknown":0,"total":94},"time":{"start":1757666771419,"stop":1757668936626,"duration":2165207,"minDuration":0,"maxDuration":87482,"sumDuration":1465689}}
