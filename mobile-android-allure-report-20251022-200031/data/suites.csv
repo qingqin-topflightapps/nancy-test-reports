@@ -1,0 +1,16 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Oct 22 19:59:29 UTC 2025","Wed Oct 22 19:59:58 UTC 2025","28774","tests.android","test_sucessful_login","TestAuthentication","","","test_NAF_2_2_0_successful_login","
+    Test Case: NAF-12
+    As a user, I want to log in with my email and password
+    Scenario: Successful Login
+    
+    Steps:
+    1. Open the app
+    2. Click on ""Log in"" button
+    3. Click on ""Sign in with your email"" button
+    4. Enter valid email and password
+    5. Click ""Log in"" button
+    6. Verify successful login
+    
+    Expected Result: User should be successfully logged in and redirected to the main app
+    "
