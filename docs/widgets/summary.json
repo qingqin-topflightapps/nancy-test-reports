@@ -1,1 +1,1 @@
-{"reportName":"Auto Test Staging build","testRuns":[],"statistic":{"failed":4,"broken":3,"skipped":1,"passed":82,"unknown":0,"total":90},"time":{"start":1760955463457,"stop":1760959654915,"duration":4191458,"minDuration":0,"maxDuration":234981,"sumDuration":2587108}}
+{"reportName":"Auto Test Staging -a","testRuns":[],"statistic":{"failed":3,"broken":0,"skipped":1,"passed":20,"unknown":0,"total":24},"time":{"start":1761143478094,"stop":1761146294484,"duration":2816390,"minDuration":0,"maxDuration":179817,"sumDuration":1569347}}
