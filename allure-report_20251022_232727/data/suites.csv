@@ -1,0 +1,339 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"
+    Test Case: NAF-42
+    As a registered user I can add my kids info in my profile page
+    Scenario: Add Kids
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Add a child"" button
+    4. Enter child's name
+    5. Enter child's age
+    6. Click on ""Save"" button
+    7. Verify child's info is added
+    ","51634","test_NAF_3_5_0_add_kids","tests.android","Wed Oct 22 23:39:37 JST 2025","passed","Wed Oct 22 23:40:29 JST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+    Test Case: NAF-93, NAF-96, NAF-97
+    As a user on the home page I should be able to see the list of recommended programs
+    Scenario: View list of recommended programs
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to the Programs tab
+    3. Verify the list of recommended programs is displayed
+    4. Click on a program card
+    5. Verify program detail page is displayed
+    6. Verify program card information is displayed
+    7. Verify program detail page is displayed
+    ","60297","test_NAF_4_3_0_view_recommended_programs","tests.android","Wed Oct 22 23:45:24 JST 2025","passed","Wed Oct 22 23:46:24 JST 2025","TestProgramManagement","test_4_Program_Management","",""
+"
+    Test Case: NAF-37, NAF-39
+    As a registered user I can view and update my bio
+    Scenario: Update Bio
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Enter bio content
+    5. Click on ""Save"" button
+    6. Verify bio content is updated
+    
+    Expected Result: Bio content is updated
+    ","32884","test_NAF_3_2_0_update_bio","tests.android","Wed Oct 22 23:32:13 JST 2025","passed","Wed Oct 22 23:32:46 JST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+    Test Case: NAF-266
+    As a user I want to create text or text + image posts to share with the community
+    Scenario: Verify creating a text-only post
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Click ""NEW POST"" button
+    4. Enter text content
+    5. Click ""Post"" button
+    6. Verify post is created successfully
+    
+    Expected Result: Text-only post should be created and visible in the community feed
+    ","16404","test_NAF_14_2_0_create_text_only_post","tests.android","Thu Oct 23 00:00:38 JST 2025","passed","Thu Oct 23 00:00:54 JST 2025","TestCommunityManagement","test_14_Community","",""
+"
+    Test Case: NAF-432
+    As a user I want to create text or text + image posts to share with the community
+    Scenario: Verify edit post after sending
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Find first post with three dots (more options)
+    4. Click three dots and check for Edit option
+    5. If Edit option exists, click Edit
+    6. Update post text to ""Test edit post""
+    7. Click Post button
+    8. Verify updated post is visible in feed
+    
+    Expected Result: Post should be editable if edit functionality is implemented
+    ","3","test_NAF_14_2_0_verify_edit_post_after_sending","tests.android","Thu Oct 23 00:01:52 JST 2025","passed","Thu Oct 23 00:01:52 JST 2025","TestCommunityManagement","test_14_Community","",""
+"
+    Test Case: NAF-73 - NAF 81, random stage change
+    As a registered user I can edit my current stage
+    Scenario: Change Stage
+    
+    Steps:
+    1. Open the app, assume the user is logged in   
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Click on ""Stage"" button
+    5. Click on ""Change"" button
+    6. Verify stage is changed
+    ","79924","test_NAF_3_7_0_change_stage","tests.android","Wed Oct 22 23:41:44 JST 2025","passed","Wed Oct 22 23:43:04 JST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+    Test Case: NAF-55
+    As a registered user I can view and update my profile settings
+    Scenario: Modify Name
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Enter name
+    5. Click on ""Save"" button
+    ","74203","test_NAF_3_4_0_modify_name","tests.android","Wed Oct 22 23:32:59 JST 2025","passed","Wed Oct 22 23:34:13 JST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+    Test Case: NAF-133
+    As a user I should be able to make progress in the program by completing each step of it
+    Scenario: Mark step as complete
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to the Programs tab
+    3. Click on a program card
+    4. If not enrolled, enroll first
+    5. Click Day 1 video
+    6. Click 'Mark as complete' button
+    7. Verify 'Day 1 complete!' popup is displayed
+    8. Click 'Back Home' button
+    9. Verify progress is not 0%
+    ","118241","test_NAF_4_10_0_mark_step_as_complete","tests.android","Wed Oct 22 23:58:11 JST 2025","passed","Thu Oct 23 00:00:10 JST 2025","TestProgramManagement","test_4_Program_Management","",""
+"
+    Test Case: NAF-265
+    As a user, I want to join a community based on my selected stage during onboarding.
+    Scenario: Verify community feed navigation
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Verify community feed is displayed
+    4. Verify community feed navigation is working
+    ","1000","test_NAF_14_1_0_verify_community_feed_navigation","tests.android","Thu Oct 23 00:00:24 JST 2025","passed","Thu Oct 23 00:00:25 JST 2025","TestCommunityManagement","test_14_Community","",""
+"
+    Test Case: NAF-63
+    As a registered user I can view and update my profile settings
+    Scenario: Change Password, Fail with Old Password and Success with New Password
+    
+    Steps:
+    1. Open the app, the user is logged in
+    2. Log out
+    3. Login with old password, should fail
+    4. Login with new password, should success
+    5. reset the password with default old one
+    ","179817","test_NAF_3_4_0_change_password_wrong_old_password","tests.android","Wed Oct 22 23:36:21 JST 2025","passed","Wed Oct 22 23:39:21 JST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+    Test Case: NAF-62, NAF-63
+    As a registered user I can view and update my profile settings
+    Scenario: Change Password
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Click on ""Change Password"" button
+    6. Enter new password
+    7. Enter confirm password
+    8. Click on ""Save"" button
+    9. Verify password is changed
+    ","48249","test_NAF_3_4_0_change_password","tests.android","Wed Oct 22 23:35:19 JST 2025","passed","Wed Oct 22 23:36:07 JST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+    Test Case: NAF-268
+    As a user I want to create text or text + image posts to share with the community
+    Scenario: Verify post fields after sending
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Click ""NEW POST"" button
+    4. Verify post input field is present and editable
+    5. Enter text content
+    6. Click ""Post"" button
+    7. Verify post fields are cleared after sending
+    
+    Expected Result: Post input field should be present, editable, and cleared after posting
+    ","31297","test_NAF_14_2_0_verify_post_fields_after_sending","tests.android","Thu Oct 23 00:01:07 JST 2025","passed","Thu Oct 23 00:01:38 JST 2025","TestCommunityManagement","test_14_Community","",""
+"
+    Test Case: NAF-12
+    As a user, I want to log in with my email and password
+    Scenario: Successful Login
+    
+    Steps:
+    1. Open the app
+    2. Click on ""Log in"" button
+    3. Click on ""Sign in with your email"" button
+    4. Enter valid email and password
+    5. Click ""Log in"" button
+    6. Verify successful login
+    
+    Expected Result: User should be successfully logged in and redirected to the main app
+    ","42216","test_NAF_2_2_0_successful_login","tests.android","Wed Oct 22 23:31:18 JST 2025","passed","Wed Oct 22 23:32:00 JST 2025","TestAuthentication","test_2_Authentication","",""
+"
+    Test Case: NAF-271
+    As a user, I want to interact with post: ""Like"" post, leave comments
+    Scenario: Verify liking a post
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Find the first like button
+    4. Record current like count
+    5. Click like button
+    6. Verify like count changes as expected
+    
+    Expected Result: User should be able to like posts and see like count change
+    ","19082","test_NAF_14_4_0_verify_liking_post","tests.android","Thu Oct 23 00:08:51 JST 2025","passed","Thu Oct 23 00:09:10 JST 2025","TestCommunityManagement","test_14_Community","",""
+"
+    Test Case: NAF-272
+    As a user, I want to interact with post: 'Like' post, leave comments
+    Scenario: Verify adding a comment to a post
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to 'Community' tab
+    3. Find a post with comments
+    4. Click on comment button
+    5. Add a new comment
+    6. Verify comment is added successfully
+    
+    Expected Result: User should be able to add comments to posts
+    ","124631","test_NAF_14_4_0_verify_adding_comment_to_post","tests.android","Thu Oct 23 00:13:58 JST 2025","failed","Thu Oct 23 00:16:03 JST 2025","TestCommunityManagement","test_14_Community","",""
+"
+    Test Case: NAF-40
+    As a registered user I can view and update profile image
+    Scenario: Edit Profile Picture
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Click on ""Take a picture"" button (might not stable on simulator)
+    5. Select a photo from the device
+    
+    Note: This test is skipped because camera functionality is not supported in the current simulator
+    ","0","test_NAF_3_3_0_edit_profile_picture","tests.android","Wed Oct 22 23:32:47 JST 2025","skipped","Wed Oct 22 23:32:47 JST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+    Test Case: NAF-91
+    As a user during onboarding, I should be able to start one of the recommended programs right from the onboarding
+    Scenario: Valid program selection and start
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Click on first recommended program
+    3. Verify 'Start Program' button is displayed
+    4. Click on 'Start Program' button
+    5. Finish first day of the program
+    ","129654","test_NAF_4_2_0_valid_program_selection_and_start","tests.android","Wed Oct 22 23:43:09 JST 2025","passed","Wed Oct 22 23:45:19 JST 2025","TestProgramManagement","test_4_Program_Management","",""
+"
+    Test Case: NAF-433
+    As a user, I want to be able to log out from the app
+    Scenario: Logout
+    
+    Steps:
+    1. Open the app
+    2. Go to ""My Profile"" button
+    3. Click on ""Log out"" button
+    4. Verify successful logout
+    
+    Expected Result: User should be successfully logged out and redirected to the welcome page
+    ","32685","test_logout_returns_to_welcome_page","tests.android","Thu Oct 23 00:17:41 JST 2025","passed","Thu Oct 23 00:18:14 JST 2025","TestLogout","test_2_Authentication_logout","",""
+"
+    Test Case: NAF-110
+    As a user I should be able to check programs details
+    Scenario: Comment under enrolled program
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to the Programs tab
+    3. Click on a program card
+    4. If not enrolled, enroll first
+    5. Click Day 1 video
+    6. Click comments entry
+    7. Click write a comment
+    8. Enter comment and send
+    9. Verify comment is posted
+    ","130698","test_NAF_4_8_0_comment_under_enrolled_program","tests.android","Wed Oct 22 23:52:25 JST 2025","failed","Wed Oct 22 23:54:36 JST 2025","TestProgramManagement","test_4_Program_Management","",""
+"
+    Test Case: NAF-433
+    As a user, I want to be able to log out from the app
+    Scenario: Logout and Relogin
+    
+    Steps:
+    1. Open the app
+    2. Go to ""My Profile"" button
+    3. Click on ""Log out"" button
+    4. Verify successful logout
+    5. Click on ""Log in"" button
+    6. Verify successful login
+    
+    Expected Result: User should be successfully logged in and redirected to the main app
+    ","86012","test_logout_and_relogin","tests.android","Thu Oct 23 00:16:09 JST 2025","passed","Thu Oct 23 00:17:35 JST 2025","TestLogout","test_2_Authentication_logout","",""
+"
+    Test Case: NAF-98, NAF-99, NAF-105
+    As a user I can enroll/unenroll any of the programs
+    Scenario: Start a program
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to the Programs tab
+    3. Click on a program card
+    4. If not enrolled, enroll first
+    5. Click 'Start Program' button
+    6. Verify 'Day 1 complete!' popup is displayed
+    7. Click 'Back Home' button
+    ","98712","test_NAF_4_5_0_start_a_program","tests.android","Wed Oct 22 23:46:28 JST 2025","passed","Wed Oct 22 23:48:07 JST 2025","TestProgramManagement","test_4_Program_Management","",""
+"
+    Test Case: NAF-47
+    As a registered user I can add my kids info in my profile page
+    Scenario: Delete Kids
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Add a child"" button
+    4. Enter child's name
+    5. Enter child's age
+    6. Click on ""Save"" button
+    7. Verify child's info is added
+    8. Click on ""Edit"" button
+    9. Click on ""Delete"" button
+    10. Verify child's info is deleted
+    ","49470","test_NAF_3_5_0_delete_kids","tests.android","Wed Oct 22 23:40:42 JST 2025","passed","Wed Oct 22 23:41:31 JST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
+"
+    Test Case: NAF-269
+    As a user I want to create text or text + image posts to share with the community
+    Scenario: Verify viewing comments on a post
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""Community"" tab
+    3. Click on a comment button for any post
+    4. Verify comment section opens
+    5. Add a comment
+    6. Verify comment is posted successfully
+    
+    Expected Result: User should be able to view and add comments to posts
+    ","122651","test_NAF_14_2_0_verify_viewing_comments_on_post","tests.android","Thu Oct 23 00:06:36 JST 2025","failed","Thu Oct 23 00:08:38 JST 2025","TestCommunityManagement","test_14_Community","",""
+"
+    Test Case: NAF-60
+    As a registered user I can view and update my profile settings
+    Scenario: Modify Mobile
+    
+    Steps:
+    1. Open the app, assume the user is logged in
+    2. Go to ""My Profile"" button
+    3. Click on ""Edit"" button
+    4. Enter mobile number
+    5. Click on ""Save"" button   
+    ","39583","test_NAF_3_4_0_modify_mobile","tests.android","Wed Oct 22 23:34:27 JST 2025","passed","Wed Oct 22 23:35:06 JST 2025","TestPersonInformationManagement","test_3_Account_Setup","",""
